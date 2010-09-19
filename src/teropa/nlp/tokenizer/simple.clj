@@ -1,37 +1,24 @@
 (ns teropa.nlp.tokenizer.simple
   (:require [clojure.contrib.string :as string])
-  (:require [teropa.nlp.tokenizer :as tokenizer]))
+  (:use teropa.nlp.tokenizer))
 
-(deftype WhitespaceTokenizer []
-  tokenizer/Tokenizer
+(deftokenizer WhitespaceTokenizer []
   (tokenize [this s]
-    (vec (.split #"\s" s)))
-  (batch-tokenize [this s]
-    (throw (UnsupportedOperationException. "WhitespaceTokenizer does not support batch tokenizing"))))
+    (vec (.split #"\s" s))))
     
-(deftype SpaceTokenizer []
-  tokenizer/Tokenizer
+(deftokenizer SpaceTokenizer []
   (tokenize [this s]
-    (vec (.split #" " s)))
-  (batch-tokenize [this s]
-    (throw (UnsupportedOperationException. "SpaceTokenizer does not support batch tokenizing"))))
+    (vec (.split #" " s))))
 
-(deftype TabTokenizer []
-  tokenizer/Tokenizer
+(deftokenizer TabTokenizer []
   (tokenize [this s]
-    (vec (.split #"\t" s)))
-  (batch-tokenize [this s]
-    (throw (UnsupportedOperationException. "TabTokenizer does not support batch tokenizing"))))
+    (vec (.split #"\t" s))))
 
-(deftype CharTokenizer []
-  tokenizer/Tokenizer
+(deftokenizer CharTokenizer []
   (tokenize [this s]
-    (vec (drop 1 (.split #"" s))))
-  (batch-tokenize [this s]
-    (throw (UnsupportedOperationException. "CharTokenizer does not support batch tokenizing"))))
+    (vec (drop 1 (.split #"" s)))))
 
-(deftype LineTokenizer [blank-lines]
-  tokenizer/Tokenizer
+(deftokenizer LineTokenizer [blank-lines]
   (tokenize [this s]
     (let [lines (.split #"\n" s)]
       (condp = blank-lines
@@ -42,6 +29,4 @@
             (if (string/blank? (peek lines-vec))
               (pop lines-vec)
               lines-vec))
-        (vec lines))))
-  (batch-tokenize [this s]
-    (throw (UnsupportedOperationException. "CharTokenizer does not support batch tokenizing"))))
+        (vec lines)))))
