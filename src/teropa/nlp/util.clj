@@ -7,15 +7,15 @@
     (Arrays/fill arr \space)
     (String/valueOf arr)))
 
-(defn- wrap-idx [#^String s idx]
+(defn- wrap-idx [^String s idx]
   (if (neg? idx)
     (+ (.length s) idx)
     idx))
 
 (defn substr
-  ([#^String s from]
+  ([^String s from]
     (.substring s (wrap-idx s from)))
-  ([#^String s from to]
+  ([^String s from to]
     (.substring s (wrap-idx s from) (wrap-idx s to))))
     
 (defn join-words [words]

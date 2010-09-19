@@ -15,3 +15,4 @@
   (is (= "have a nice day" (join-words ["have" "a" "nice" "day"]))))
 
 (run-tests)
+

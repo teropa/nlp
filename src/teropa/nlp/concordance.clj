@@ -21,7 +21,7 @@
             (let [lhs (str
                         (blank-string half-width)
                         (join-words (subvec tokens (- offset context) offset)))
-                  rhs (join-words(subvec tokens (inc offset) (+ offset context)))]
+                  rhs (join-words (subvec tokens (inc offset) (+ offset context)))]
               (str
                 (substr lhs (- half-width))
                 word
