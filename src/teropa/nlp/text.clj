@@ -1,7 +1,8 @@
-(ns teropa.nlp.text)
+(ns teropa.nlp.text
+  (:require [teropa.nlp.concordance :as concordance]))
 
 (defrecord Text [tokens])
 
-(extend Text
-  teropa.nlp.concordance/Concordance
-    teropa.nlp.concordance/text-impl)
+(defn make-text [text]
+  (Text. text))
+
