@@ -49,15 +49,15 @@
       (first-upper? this) :upper
       :else :none))
   (is-ellipsis? [this]
-    (Pattern/matches re-ellipsis tok))
+    (re-matches re-ellipsis tok))
   (is-number? [this]
     (.startsWith (get-type this) "##number##"))
   (is-initial? [this]
-    (Pattern/matches re-initial tok))
+    (re-matches re-initial tok))
   (is-alpha? [this]
-    (Pattern/matches re-alpha tok))
+    (re-matches re-alpha tok))
   (is-non-punct? [this]
-    (Pattern/matches re-non-punct (get-type this))))
+    (re-matches re-non-punct (get-type this))))
       
 
 (defn make-token

@@ -79765,252 +79765,86 @@
   "maalailtiin" 32,
   "taaksesi" 32},
  :abbrev-types
- ["em"
-  "va"
-  "mr"
-  "ruots"
-  "os"
-  "hels"
-  "p"
-  "v.o"
-  "kand"
-  "970125090.jtun"
-  "ins"
-  "r.y"
-  "vt"
-  "jne"
-  "ym"
-  "l.-g"
-  "ponteva"
-  "milj"
-  "id"
-  "esim"
-  "sis"
-  "nk"
-  "970131067.jtun"
-  "j.w"
-  "suom"
-  "pros"
-  "970102248.jtun"
-  "valt"
-  "970111092.jtun"
-  "rotary-järjestössä"
-  "c.a"
-  "970130160.jtun"
-  "t.a"
-  "yhteystiedot"
-  "m3"
-  "lis"
-  "pj"
-  "toissapäiväinen"
-  "m.g"
-  "ski"
-  "ortod"
-  "pan"
-  "t"
-  "p2"
-  "oik"
-  "th"
-  "o.l"
-  "s"
-  "t.h"
-  "waller"
-  "apul"
-  "rf"
-  "a.i"
-  "hj"
-  "tms"
-  "dipl"
-  "970111011.jtun"
-  "970102171.jtun"
-  "o.s"
-  "dr"
-  "961221327.jtun"
-  "elo"
-  "970120219.jtun"
-  "o.-i"
-  "ns"
-  "ok"
-  "h"
-  "k"
-  "j"
-  "st"
-  "kapakoista"
-  "muistelmia"
-  "kp"
-  "fil"
-  "w"
-  "ö"
-  "y"
-  "970124030.jtun"
-  "28.t1"
-  "pelintekijä"
-  "op"],
+ #{"970111011.jtun" "suom" "dipl" "op" "st" "jne" "hj" "kapakoista"
+   "p2" "970130160.jtun" "os" "hels" "pelintekijä" "kp" "mr" "ns"
+   "28.t1" "970124030.jtun" "rotary-järjestössä" "ortod" "m3" "apul"
+   "m.g" "pros" "t.a" "970102171.jtun" "970111092.jtun" "h" "elo" "em"
+   "fil" "j" "k" "ruots" "va" "ponteva" "kand" "970125090.jtun" "o.l"
+   "dr" "t.h" "ins" "p" "ski" "oik" "esim" "yhteystiedot" "s" "valt"
+   "j.w" "970120219.jtun" "t" "rf" "th" "o.s" "ym" "ö" "c.a" "lis"
+   "961221327.jtun" "w" "v.o" "waller" "y" "milj" "tms" "pj" "id"
+   "o.-i" "970102248.jtun" "ok" "a.i" "l.-g" "muistelmia" "pan" "sis"
+   "970131067.jtun" "nk" "r.y" "toissapäiväinen" "vt"},
  :collocations
- [["##number##" "sari"]
-  ["##number##" "rauhankatu"]
-  ["##number##" "huhtikuuta"]
-  ["##number##" "maskeerauskurssin"]
-  ["##number##" "anne"]
-  ["##number##" "leikkaa"]
-  ["##number##" "krs"]
-  ["##number##" "kf1"]
-  ["##number##" "tia"]
-  ["##number##" "kirsi"]
-  ["##number##" "cxd5"]
-  ["##number##" "kausimaksu"]
-  ["##number##" "sulata"]
-  ["##number##" "rxd5"]
-  ["g" "gahmberg"]
-  ["##number##" "suuruusluokan"]
-  ["##number##" "jäsenkortti"]
-  ["##number##" "ryhmänäytökset"]
-  ["##number##" "pia"]
-  ["##number##" "levitä"]
-  ["##number##" "kh3"]
-  ["##number##" "päivään"]
-  ["##number##" "viimeistele"]
-  ["##number##" "pane"]
-  ["##number##" "te1"]
-  ["##number##" "menotiedoissa"]
-  ["##number##" "keitä"]
-  ["##number##" "d5"]
-  ["##number##" "ulkoasiainministeriön"]
-  ["##number##" "jaana"]
-  ["##number##" "kierros"]
-  ["##number##" "varapuheenjohtajaksi"]
-  ["##number##" "elokuuta"]
-  ["##number##" "kg2"]
-  ["v" "kaupungista"]
-  ["##number##" "puupiirrossarja"]
-  ["##number##" "tuolloin"]
-  ["##number##" "romantika-yhtye"]
-  ["##number##" "harjoituksissa"]
-  ["##number##" "kuumenna"]
-  ["##number##" "lxg6"]
-  ["##number##" "maria"]
-  ["##number##" "lg3"]
-  ["##number##" "heinäkuuta"]
-  ["e" "waris"]
-  ["##number##" "vaahdota"]
-  ["##number##" "hxg4"]
-  ["a" "sjögren"]
-  ["##number##" "kokkola"]
-  ["##number##" "la4"]
-  ["##number##" "g4"]
-  ["##number##" "tekstit"]
-  ["##number##" "alustuksen"]
-  ["##number##" "syyskuuta"]
-  ["a" "sjögrenin"]
-  ["##number##" "osallistumismaksu"]
-  ["##number##" "re2"]
-  ["##number##" "h3"]
-  ["##number##" "kerho"]
-  ["##number##" "esiintyjinä"]
-  ["##number##" "tb1xb6"]
-  ["##number##" "rc6+"]
-  ["##number##" "vatkaa"]
-  ["##number##" "txb5"]
-  ["##number##" "luento"]
-  ["##number##" "rxd4"]
-  ["##number##" "bxc4"]
-  ["##number##" "rc3"]
-  ["##number##" "ta1"]
-  ["##number##" "perkaa"]
-  ["##number##" "solisteina"]
-  ["##number##" "kh2"]
-  ["##number##" "rf3"]
-  ["##number##" "tallitontun"]
-  ["##number##" "th3"]
-  ["##number##" "d4"]
-  ["##number##" "g3"]
-  ["##number##" "kamarikuoro"]
-  ["##number##" "esitelmä"]
-  ["##number##" "tammikuuta"]
-  ["##number##" "uppo-nallen"]
-  ["##number##" "rd2"]
-  ["##number##" "menyy"]
-  ["##number##" "c4"]
-  ["##number##" "kg3"]
-  ["##number##" "ryömä"]
-  ["##number##" "uimakoulu"]
-  ["##number##" "lf3"]
-  ["##number##" "lf4"]
-  ["##number##" "ld1"]
-  ["##number##" "postimaksu"]
-  ["##number##" "ohjaus"]
-  ["##number##" "b3"]
-  ["##number##" "kerros"]
-  ["##number##" "sairaankuljetukset"]
-  ["##number##" "mervi"]
-  ["##number##" "ohjelmassa"]
-  ["##number##" "kuoroa"]
-  ["##number##" "viikko"]
-  ["##number##" "f3-f4"]
-  ["##number##" "asti"]
-  ["##number##" "siirto"]
-  ["o" "stenberg"]
-  ["##number##" "lähetysohjeet"]
-  ["##number##" "te8+"]
-  ["##number##" "ohjelma"]
-  ["##number##" "kuori"]
-  ["##number##" "re5"]
-  ["##number##" "le2"]
-  ["v" "maaseudulta"]
-  ["l" "j."]
-  ["##number##" "mieskuoro"]
-  ["##number##" "kesäkuuta"]
-  ["e" "hämäläisen"]
-  ["##number##" "kokeessa"]
-  ["##number##" "opettajina"]
-  ["##number##" "df3"]
-  ["##number##" "kaada"]
-  ["##number##" "raisa"]
-  ["##number##" "elokuvat"]
-  ["##number##" "mittaa"]
-  ["##number##" "pääsymaksu"]
-  ["##number##" "lxd6"]
-  ["##number##" "h4"]
-  ["##number##" "saakka"]
-  ["##number##" "toukokuuta"]
-  ["##number##" "joulukuuta"]
-  ["##number##" "meller"]
-  ["##number##" "exf6"]
-  ["##number##" "pelkkään"]
-  ["##number##" "a3"]
-  ["##number##" "rxf3"]
-  ["##number##" "maaliskuuta"]
-  ["v" "helsingistä"]
-  ["##number##" "sekoita"]
-  ["##number##" "e4"]
-  ["##number##" "sm"]
-  ["##number##" "kaustinen"]
-  ["##number##" "lh2"]
-  ["##number##" "marraskuuta"]
-  ["##number##" "dh5+"]
-  ["##number##" "gxf5"]
-  ["##number##" "helmikuuta"]
-  ["##number##" "kurssi"]
-  ["##number##" "de2"]
-  ["b" "huggins"]
-  ["##number##" "ld3"]
-  ["##number##" "lg5"]
-  ["##number##" "lokakuuta"]
-  ["##number##" "liikkeitä"]
-  ["##number##" "dxg6+"]
-  ["c" "clarke"]
-  ["##number##" "kvm"]
-  ["a" "t."]
-  ["##number##" "ilmailumuseo"]
-  ["##number##" "luokan"]
-  ["##number##" "tiede-teatterissa"]
-  ["##number##" "de3-e1"]
-  ["##number##" "valmista"]
-  ["##number##" "vetäjänä"]
-  ["##number##" "aurinko"]
-  ["##number##" "tunnille"]
-  ["##number##" "täky-galleria"]
-  ["##number##" "ta1-b1"]
-  ["##number##" "opastajana"]
-  ["##number##" "lc2"]
-  ["a" "pietilän"]]}
+ #{["##number##" "huhtikuuta"] ["##number##" "pia"] ["b" "huggins"]
+   ["##number##" "pane"] ["##number##" "kaada"] ["##number##" "raisa"]
+   ["##number##" "dxg6+"] ["##number##" "tb1xb6"]
+   ["##number##" "osallistumismaksu"] ["##number##" "vaahdota"]
+   ["##number##" "kirsi"] ["##number##" "opastajana"]
+   ["##number##" "kierros"] ["v" "helsingistä"] ["##number##" "h3"]
+   ["##number##" "romantika-yhtye"] ["##number##" "ohjelma"]
+   ["##number##" "harjoituksissa"] ["##number##" "krs"]
+   ["##number##" "tia"] ["##number##" "g3"] ["##number##" "h4"]
+   ["##number##" "kesäkuuta"] ["##number##" "päivään"]
+   ["##number##" "luento"] ["##number##" "helmikuuta"]
+   ["##number##" "mervi"] ["##number##" "g4"]
+   ["##number##" "kaustinen"] ["##number##" "f3-f4"]
+   ["##number##" "täky-galleria"] ["##number##" "saakka"]
+   ["##number##" "ohjaus"] ["##number##" "perkaa"]
+   ["##number##" "opettajina"] ["##number##" "uppo-nallen"]
+   ["##number##" "maaliskuuta"] ["##number##" "vetäjänä"]
+   ["##number##" "e4"] ["##number##" "leikkaa"]
+   ["##number##" "postimaksu"] ["##number##" "elokuuta"]
+   ["##number##" "d4"] ["##number##" "solisteina"] ["##number##" "de2"]
+   ["##number##" "df3"] ["##number##" "b3"] ["##number##" "c4"]
+   ["##number##" "d5"] ["##number##" "marraskuuta"]
+   ["##number##" "uimakoulu"] ["##number##" "ulkoasiainministeriön"]
+   ["##number##" "a3"] ["##number##" "luokan"] ["##number##" "rxf3"]
+   ["##number##" "maskeerauskurssin"] ["##number##" "kh2"]
+   ["##number##" "ohjelmassa"] ["##number##" "rxd4"]
+   ["##number##" "kf1"] ["##number##" "lh2"] ["##number##" "kg2"]
+   ["##number##" "kh3"] ["##number##" "heinäkuuta"]
+   ["##number##" "maria"] ["e" "waris"] ["##number##" "menyy"]
+   ["##number##" "tallitontun"] ["##number##" "rxd5"]
+   ["##number##" "txb5"] ["##number##" "elokuvat"]
+   ["##number##" "puupiirrossarja"] ["##number##" "kg3"]
+   ["##number##" "esitelmä"] ["##number##" "pelkkään"]
+   ["##number##" "lg3"] ["##number##" "ta1-b1"]
+   ["##number##" "syyskuuta"] ["##number##" "mieskuoro"]
+   ["##number##" "ld1"] ["##number##" "le2"] ["##number##" "lf3"]
+   ["g" "gahmberg"] ["##number##" "tiede-teatterissa"]
+   ["##number##" "viikko"] ["c" "clarke"] ["##number##" "lf4"]
+   ["##number##" "lg5"] ["##number##" "dh5+"] ["##number##" "kokeessa"]
+   ["##number##" "sm"] ["##number##" "toukokuuta"]
+   ["##number##" "menotiedoissa"] ["##number##" "esiintyjinä"]
+   ["##number##" "ilmailumuseo"] ["##number##" "siirto"]
+   ["a" "sjögren"] ["##number##" "lc2"] ["##number##" "ld3"]
+   ["##number##" "lxg6"] ["##number##" "alustuksen"]
+   ["##number##" "kuori"] ["o" "stenberg"] ["##number##" "levitä"]
+   ["##number##" "mittaa"] ["##number##" "lähetysohjeet"]
+   ["##number##" "tammikuuta"] ["a" "pietilän"] ["##number##" "jaana"]
+   ["##number##" "tunnille"] ["##number##" "hxg4"]
+   ["##number##" "jäsenkortti"] ["##number##" "lxd6"]
+   ["##number##" "sairaankuljetukset"] ["##number##" "kerros"]
+   ["##number##" "kuumenna"] ["##number##" "la4"]
+   ["##number##" "kerho"] ["##number##" "keitä"]
+   ["##number##" "lokakuuta"] ["##number##" "joulukuuta"]
+   ["##number##" "varapuheenjohtajaksi"] ["##number##" "kuoroa"]
+   ["##number##" "th3"] ["##number##" "re2"] ["##number##" "rf3"]
+   ["##number##" "gxf5"] ["##number##" "liikkeitä"] ["a" "sjögrenin"]
+   ["##number##" "sekoita"] ["##number##" "kokkola"]
+   ["##number##" "te1"] ["##number##" "rd2"] ["l" "j."]
+   ["##number##" "kamarikuoro"] ["##number##" "kurssi"]
+   ["##number##" "viimeistele"] ["##number##" "vatkaa"] ["a" "t."]
+   ["##number##" "rc3"] ["##number##" "kvm"] ["##number##" "re5"]
+   ["e" "hämäläisen"] ["##number##" "pääsymaksu"] ["##number##" "exf6"]
+   ["##number##" "valmista"] ["##number##" "te8+"]
+   ["##number##" "anne"] ["##number##" "kausimaksu"]
+   ["##number##" "ryhmänäytökset"] ["##number##" "ta1"]
+   ["##number##" "sulata"] ["##number##" "sari"] ["v" "maaseudulta"]
+   ["##number##" "meller"] ["##number##" "ryömä"]
+   ["##number##" "suuruusluokan"] ["##number##" "tekstit"]
+   ["##number##" "tuolloin"] ["##number##" "rauhankatu"]
+   ["##number##" "cxd5"] ["##number##" "rc6+"] ["##number##" "aurinko"]
+   ["##number##" "asti"] ["v" "kaupungista"] ["##number##" "bxc4"]
+   ["##number##" "de3-e1"]}}

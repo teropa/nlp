@@ -77,22 +77,24 @@
  
 (defn- realign-boundaries [sentences])
 
-(defn- tokenize-words [plaintext]
+(defn- tokenize-words [tokenizer plaintext]
   "Divide the given text into tokens, using the punkt word
    segmentation regular expression, and generate a lazy seq of tokens
    augmented as with two boolean values for whether the given token occurs
    at the start of a paragraph or a new line, respectively"
   (letfn [(tokens [lines para-start]
             (lazy-seq
-              (let [line (first lines)]
-                (if-not (string/blank? line)
-                  (let [line-toks (word-tokenize line)]
-                    (concat
-                      [(make-token (first line-toks) {:parastart para-start
-                                                      :linestart true})]
-                      (map make-token (rest line-toks))
-                      (tokens (rest lines) false)))
-                  (tokens (rest lines) true)))))]
+              (if (seq lines)
+                  (let [line (first lines)]
+                    (if-not (string/blank? line)
+                      (let [line-toks (word-tokenize (:lang-vars tokenizer) line)]
+                        (concat
+                          [(make-token (first line-toks) {:parastart para-start
+                                                          :linestart true})]
+                          (map make-token (rest line-toks))
+                          (tokens (rest lines) false)))
+                      (tokens (rest lines) true)))
+                  nil)))]
     (tokens (.split plaintext "\n") false)))
 
 (defn- first-pass-annotation
@@ -211,7 +213,7 @@
   "Return true if the given text includes a sentence break"
   [text tokenizer]
   (some :sentbreak
-    (butlast (annotate-tokens (tokenize-words text) tokenizer))))
+    (butlast (annotate-tokens (tokenize-words tokenizer text) tokenizer))))
 
 (defn- sentences-from-text
   "Given a text, generates the sentences in that text by only testing
@@ -222,23 +224,24 @@
       (if realign-boundaries? (realign-boundaries sents) sents)))
   ([tokenizer text]
     (letfn [(last-break-for-next [matcher]
-              (if (.group matcher 3) 
-                (.start matcher 3) ; Next sentence starts after whitespace
+              (if (.group matcher 2) 
+                (.start matcher 2) ; Next sentence starts after whitespace
                 (.end matcher))) ; Next sentence starts at following punctuation
             (next-match [matcher last-break]
               (lazy-seq
                 (if (.find matcher)
                     (if (text-contains-sentbreak?
-                          (str (.group matcher) (.group matcher 2))
+                          (str (.group matcher) (.group matcher 1))
                           tokenizer)
                       (cons
                         (.substring text last-break (.end matcher))
                         (next-match
                           matcher
-                          (last-break-for-next matcher))))
+                          (last-break-for-next matcher)))
+                      (next-match matcher last-break))
                   [(.substring text last-break)])))]
       (next-match
-        (.matcher (period-context-re (:lang-vars tokenizer)))
+        (.matcher (period-context-re (:lang-vars tokenizer)) text)
         0))))
     
 
@@ -251,6 +254,3 @@
   (tokenize [this text] (tokenize this text {}))
   (tokenize [this text {:keys [realign-boundaries]}]
     (sentences-from-text this text realign-boundaries)))
-
-  
-  

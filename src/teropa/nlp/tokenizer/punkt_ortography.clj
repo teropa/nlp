@@ -2,7 +2,7 @@
   (:use teropa.nlp.tokenizer.punkt-token)
   (:use teropa.nlp.util))
 
-(def punctuation #(";" ":" "," "." "!" "?"))
+(def punctuation #{";" ":" "," "." "!" "?"})
 
 (def ortho-beg-uc (bit-shift-left 1 1)) ; Beginning of a sentence with upper case
 (def ortho-mid-uc (bit-shift-left 1 2)) ; Middle of a sentence with upper case
@@ -27,6 +27,7 @@
 (defn ortho-heuristic
   "Decide whether the given token is the first token in a sentence"
   [token context]
+  (println "ortho")
   (let [ctx (get context (type-no-sentperiod token) 0)]
     (cond
       ; Sentences don't start with punctuation marks
@@ -48,4 +49,3 @@
 	      false
       ; Otherwise we're not sure
 	    :else :unknown)))
-

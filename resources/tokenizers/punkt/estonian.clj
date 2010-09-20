@@ -68544,152 +68544,55 @@
   "naerutada" 32,
   "ümberehitusi" 32},
  :abbrev-types
- ["b.p"
-  "gr"
-  "cm"
-  "p.s"
-  "v.k"
-  "vm"
-  "g.u.n"
-  "s.v"
-  "p.k"
-  "mhm"
-  "c.-h"
-  "89/90"
-  "dost"
-  "u.t"
-  "c.h.-r"
-  "k.h"
-  "h.l"
-  "hajutada"
-  "n.-ö"
-  "fido"
-  "t.k"
-  "t.j"
-  "a.d"
-  "j.r"
-  "ameerika-mees"
-  "amm"
-  "a.b"
-  "i.q"
-  "m.h"
-  "l.l"
-  "m.k"
-  "a.s"
-  "m.b"
-  "m.e"
-  "päevapiltnikud"
-  "j.l"
-  "a"
-  "c"
-  "b"
-  "d"
-  "h"
-  "j"
-  "eos"
-  "e.q"
-  "pankurit"
-  "e.t"
-  "t.a.s.s"
-  "c.h"],
+ #{"a" "amm" "m.b" "b" "päevapiltnikud" "c" "d" "b.p" "m.e" "89/90"
+   "k.h" "h.l" "a.s" "c.-h" "m.h" "h" "e.q" "j.l" "eos" "n.-ö" "j" "cm"
+   "m.k" "l.l" "gr" "e.t" "i.q" "dost" "p.k" "fido" "hajutada" "g.u.n"
+   "j.r" "t.j" "t.a.s.s" "t.k" "mhm" "v.k" "a.b" "p.s" "pankurit"
+   "c.h.-r" "a.d" "vm" "ameerika-mees" "u.t" "s.v" "c.h"},
  :collocations
- [["##number##" "suurim"]
-  ["##number##" "milliseid"]
-  ["##number##" "kust"]
-  ["##number##" "septembrit"]
-  ["##number##" "veebruaril"]
-  ["##number##" "klassist"]
-  ["##number##" "septembriks"]
-  ["##number##" "juuni"]
-  ["##number##" "aastani"]
-  ["##number##" "jaanuaril"]
-  ["##number##" "missugust"]
-  ["##number##" "oktoobril"]
-  ["##number##" "detsember"]
-  ["##number##" "the"]
-  ["##number##" "sajandi"]
-  ["##number##" "nimetage"]
-  ["##number##" "aastatel"]
-  ["##number##" "september"]
-  ["##number##" "juuli"]
-  ["##number##" "oktoober"]
-  ["##number##" "aastate"]
-  ["##number##" "septembrini"]
-  ["##number##" "iidol"]
-  ["m" "kassovitz"]
-  ["##number##" "septembril"]
-  ["##number##" "novembri"]
-  ["##number##" "detsembril"]
-  ["##number##" "kumb"]
-  ["##number##" "taevas"]
-  ["##number##" "juulist"]
-  ["##number##" "jaanuar"]
-  ["k" "herkül"]
-  ["##number##" "jaanuarini"]
-  ["##number##" "a"]
-  ["n" "liidu"]
-  ["p" "s"]
-  ["##number##" "septembrist"]
-  ["##number##" "juunil"]
-  ["##number##" "korruselt"]
-  ["##number##" "jaanuari"]
-  ["##number##" "aastatesse"]
-  ["##number##" "juulil"]
-  ["##number##" "juunini"]
-  ["##number##" "imre"]
-  ["##number##" "millised"]
-  ["s" "stadnikov"]
-  ["##number##" "augustil"]
-  ["m" "e"]
-  ["##number##" "sajandil"]
-  ["##number##" "märtsini"]
-  ["##number##" "oktoobrini"]
-  ["n" "jurist"]
-  ["##number##" "mis"]
-  ["##number##" "pariis"]
-  ["##number##" "kuupäeval"]
-  ["##number##" "kelle"]
-  ["##number##" "eluaasta"]
-  ["##number##" "märtsil"]
-  ["##number##" "augustini"]
-  ["##number##" "detsembrini"]
-  ["##number##" "aastaks"]
-  ["##number##" "casino"]
-  ["##number##" "mail"]
-  ["##number##" "millist"]
-  ["##number##" "veebruari"]
-  ["##number##" "septembri"]
-  ["##number##" "juulilt"]
-  ["##number##" "helsingi"]
-  ["##number##" "epee"]
-  ["##number##" "mida"]
-  ["##number##" "oktoobri"]
-  ["##number##" "milline"]
-  ["##number##" "aastast"]
-  ["##number##" "novembrini"]
-  ["##number##" "action-film"]
-  ["##number##" "aastail"]
-  ["##number##" "augustist"]
-  ["s" "mill"]
-  ["##number##" "aasta"]
-  ["##number##" "london"]
-  ["##number##" "oktoobrist"]
-  ["##number##" "detsembri"]
-  ["r" "järve-vomm"]
-  ["t" "jõgeda"]
-  ["##number##" "millise"]
-  ["##number##" "novembril"]
-  ["##number##" "septembrile"]
-  ["##number##" "november"]
-  ["##number##" "aprillil"]
-  ["##number##" "augusti"]
-  ["##number##" "stockholm"]
-  ["##number##" "millest"]
-  ["k" "mägi"]
-  ["##number##" "august"]
-  ["##number##" "aastal"]
-  ["##number##" "veebruarini"]
-  ["##number##" "mai"]
-  ["##number##" "millega"]
-  ["##number##" "detsembrist"]
-  ["n" "n"]]}
+ #{["##number##" "missugust"] ["##number##" "aastaks"]
+   ["##number##" "juulist"] ["##number##" "veebruari"]
+   ["##number##" "aprillil"] ["n" "n"] ["s" "stadnikov"]
+   ["##number##" "klassist"] ["##number##" "millest"]
+   ["##number##" "märtsini"] ["##number##" "korruselt"]
+   ["##number##" "kust"] ["##number##" "helsingi"]
+   ["##number##" "epee"] ["##number##" "kelle"]
+   ["##number##" "oktoobril"] ["##number##" "aastal"] ["p" "s"]
+   ["##number##" "detsembrini"] ["m" "kassovitz"]
+   ["##number##" "millist"] ["##number##" "sajandi"]
+   ["##number##" "juulilt"] ["##number##" "novembril"]
+   ["##number##" "taevas"] ["##number##" "septembril"]
+   ["##number##" "detsembri"] ["##number##" "the"]
+   ["##number##" "aastate"] ["##number##" "september"]
+   ["##number##" "november"] ["##number##" "eluaasta"] ["s" "mill"]
+   ["##number##" "pariis"] ["##number##" "detsembrist"]
+   ["##number##" "septembrile"] ["##number##" "aastatesse"]
+   ["##number##" "mai"] ["##number##" "casino"]
+   ["##number##" "septembrini"] ["r" "järve-vomm"]
+   ["##number##" "novembrini"] ["##number##" "mail"]
+   ["##number##" "mis"] ["##number##" "imre"] ["k" "mägi"]
+   ["##number##" "oktoober"] ["##number##" "london"] ["n" "liidu"]
+   ["##number##" "septembrit"] ["##number##" "mida"]
+   ["##number##" "milliseid"] ["##number##" "kuupäeval"]
+   ["##number##" "aastatel"] ["##number##" "septembri"]
+   ["##number##" "action-film"] ["##number##" "aastani"]
+   ["##number##" "detsembril"] ["t" "jõgeda"]
+   ["##number##" "septembrist"] ["##number##" "oktoobrini"]
+   ["##number##" "novembri"] ["##number##" "märtsil"]
+   ["##number##" "sajandil"] ["##number##" "nimetage"] ["n" "jurist"]
+   ["##number##" "stockholm"] ["##number##" "millise"]
+   ["##number##" "kumb"] ["##number##" "aasta"]
+   ["##number##" "juunini"] ["##number##" "oktoobri"] ["m" "e"]
+   ["##number##" "augustini"] ["##number##" "iidol"]
+   ["##number##" "aastast"] ["##number##" "a"] ["##number##" "jaanuar"]
+   ["##number##" "oktoobrist"] ["##number##" "jaanuarini"]
+   ["##number##" "septembriks"] ["##number##" "suurim"]
+   ["##number##" "august"] ["##number##" "millega"]
+   ["##number##" "aastail"] ["##number##" "veebruaril"]
+   ["##number##" "milline"] ["k" "herkül"] ["##number##" "veebruarini"]
+   ["##number##" "millised"] ["##number##" "juulil"]
+   ["##number##" "jaanuaril"] ["##number##" "juuni"]
+   ["##number##" "augustil"] ["##number##" "augusti"]
+   ["##number##" "juunil"] ["##number##" "jaanuari"]
+   ["##number##" "juuli"] ["##number##" "augustist"]
+   ["##number##" "detsember"]}}

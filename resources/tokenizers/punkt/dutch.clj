@@ -32208,140 +32208,28 @@
   "mortuarium" 32,
   "publiceren" 32},
  :abbrev-types
- ["v.d"
-  "w.k"
-  "ds"
-  "aanvielen"
-  "n"
-  "th"
-  "mgr"
-  "gesch"
-  "dr"
-  "nr"
-  "h"
-  "l"
-  "p"
-  "t"
-  "s.v"
-  "p.a.m"
-  "r.p"
-  "s.z"
-  "h.g"
-  "blz"
-  "s.v.p"
-  "h.p"
-  "h.s"
-  "esb"
-  "o.m"
-  "a.l"
-  "a.m"
-  "o.a"
-  "jr"
-  "jl"
-  "a.v"
-  "ontwaakte"
-  "a.s"
-  "c"
-  "e.d"
-  "g"
-  "k"
-  "c.p.j"
-  "schouwburg"
-  "s"
-  "bod"
-  "mr"
-  "m.o"
-  "binnengekomen"
-  "chr"
-  "f.o.j"
-  "pk"
-  "ph"
-  "j.l"
-  "r.v.d"
-  "j.b.m"
-  "l.e.h"
-  "bijgebracht"
-  "mm"
-  "j"
-  "f.m"
-  "r"
-  "a.v.d"
-  "v"
-  "drs"
-  "int"
-  "e.l"
-  "ir"
-  "p.j"
-  "j.v.d"
-  "ing"
-  "p.f"
-  "v.l.n.r"
-  "t.e"
-  "f.c"
-  "f.v.d"
-  "m.v.d"
-  "inc"
-  "fr"
-  "j.w"
-  "pensioenfonds"
-  "m.j"
-  "j.g"
-  "j.f"
-  "j.d"
-  "m.b"
-  "j.h"
-  "l.a"
-  "j.m"
-  "m.g"
-  "a"
-  "aansluit"
-  "e"
-  "u.o.m"
-  "c.q"
-  "m"
-  "b.v"
-  "st"
-  "j.a"
-  "c.c"
-  "y"
-  "b.b"
-  "m.i.v"
-  "c.j"],
+ #{"mm" "a.m" "j.d" "a" "h.g" "schouwburg" "st" "c.p.j" "m.b" "jl"
+   "o.a" "p.a.m" "j.f" "ing" "c" "e.l" "f.o.j" "j.g" "nr"
+   "binnengekomen" "f.v.d" "j.h" "e" "f.m" "drs" "mr" "c.q" "a.s" "m.g"
+   "g" "h" "jr" "j.v.d" "p.f" "j.l" "ir" "a.v" "m.j" "j.m" "j" "h.p"
+   "b.v" "k" "t.e" "pensioenfonds" "m.v.d" "l" "fr" "v.d" "p.j" "m"
+   "h.s" "chr" "n" "dr" "o.m" "m.o" "ds" "int" "p" "r.v.d" "blz"
+   "m.i.v" "aanvielen" "r" "s" "j.w" "t" "w.k" "esb" "r.p" "th" "u.o.m"
+   "v" "b.b" "bod" "c.c" "ph" "mgr" "v.l.n.r" "y" "aansluit"
+   "ontwaakte" "gesch" "f.c" "e.d" "s.v" "pk" "l.e.h" "s.v.p" "j.b.m"
+   "j.a" "inc" "bijgebracht" "c.j" "s.z" "a.v.d" "a.l" "l.a"},
  :collocations
- [["##number##" "gatorade"]
-  ["##number##" "carrera"]
-  ["##number##" "tvm"]
-  ["w" "spatje"]
-  ["##number##" "höl"]
-  ["##number##" "snotselelaank"]
-  ["##number##" "heer"]
-  ["##number##" "lotto"]
-  ["##number##" "once"]
-  ["##number##" "sotelo"]
-  ["w" "baron"]
-  ["##number##" "pdm"]
-  ["w" "bruinsma"]
-  ["##number##" "mg-gb"]
-  ["##number##" "orioli"]
-  ["##number##" "panasonic"]
-  ["##number##" "mas"]
-  ["##number##" "motorola"]
-  ["##number##" "cavandoli"]
-  ["##number##" "buckler"]
-  ["##number##" "tulip"]
-  ["##number##" "ariostea"]
-  ["f" "kennedy"]
-  ["##number##" "helvetia"]
-  ["##number##" "clas"]
-  ["w" "jense"]
-  ["##number##" "peterhansel"]
-  ["b" "situatie"]
-  ["##number##" "morales"]
-  ["##number##" "arcarons"]
-  ["##number##" "telekom"]
-  ["##number##" "lotus"]
-  ["w" "heuvelmans"]
-  ["##number##" "rmo"]
-  ["##number##" "castorama"]
-  ["##number##" "magnaldi"]
-  ["##number##" "banesto"]]}
+ #{["##number##" "panasonic"] ["##number##" "morales"]
+   ["##number##" "heer"] ["##number##" "magnaldi"] ["##number##" "tvm"]
+   ["##number##" "lotto"] ["b" "situatie"] ["##number##" "cavandoli"]
+   ["##number##" "helvetia"] ["##number##" "mg-gb"]
+   ["##number##" "motorola"] ["##number##" "lotus"] ["w" "bruinsma"]
+   ["##number##" "sotelo"] ["w" "heuvelmans"] ["##number##" "arcarons"]
+   ["##number##" "peterhansel"] ["##number##" "tulip"]
+   ["##number##" "castorama"] ["##number##" "rmo"]
+   ["##number##" "ariostea"] ["##number##" "carrera"] ["w" "jense"]
+   ["##number##" "banesto"] ["##number##" "pdm"] ["##number##" "clas"]
+   ["w" "spatje"] ["##number##" "snotselelaank"]
+   ["##number##" "buckler"] ["##number##" "höl"] ["##number##" "mas"]
+   ["##number##" "telekom"] ["##number##" "once"] ["f" "kennedy"]
+   ["w" "baron"] ["##number##" "gatorade"] ["##number##" "orioli"]}}

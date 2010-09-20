@@ -26726,83 +26726,19 @@
   "roumaines" 32,
   "aussitôt" 98},
  :abbrev-types
- ["s.a"
-  "ed"
-  "p.s"
-  "r.e"
-  "ita"
-  "vot"
-  "g.-b"
-  "bta"
-  "tch"
-  "arg"
-  "inc"
-  "j.-m.g"
-  "fra"
-  "p.-b"
-  "esp"
-  "blu"
-  "gb-bel"
-  "equ"
-  "jap"
-  "suè"
-  "tél"
-  "aus"
-  "3o"
-  "aut"
-  "g-b-bel"
-  "f.o"
-  "msf"
-  "you"
-  "mir"
-  "usx"
-  "etc"
-  "ital"
-  "j.b"
-  "c.u"
-  "corp"
-  "f.b"
-  "p.o.l"
-  "j.-l"
-  "j.l"
-  "abst"
-  "inscr"
-  "b"
-  "e.d"
-  "g"
-  "cie"
-  "cid"
-  "expr"
-  "k"
-  "pds"
-  "o"
-  "e.-u"
-  "e.p"
-  "p"
-  "r"
-  "can"
-  "w"
-  "v"
-  "shi"
-  "z"
-  "e"
-  "ctk"],
+ #{"aut" "msf" "b" "esp" "abst" "j.-l" "e" "s.a" "suè" "g" "f.o" "e.p"
+   "j.l" "equ" "r.e" "c.u" "corp" "k" "blu" "p.o.l" "o" "bta" "p" "can"
+   "e.-u" "r" "p.-b" "shi" "etc" "fra" "expr" "p.s" "v" "ita" "mir"
+   "arg" "ital" "tél" "w" "gb-bel" "g-b-bel" "jap" "tch" "z" "f.b"
+   "usx" "ctk" "vot" "e.d" "g.-b" "3o" "inscr" "j.-m.g" "cid" "j.b"
+   "inc" "you" "ed" "cie" "pds" "aus"},
  :collocations
- [["s" "motos"]
-  ["##number##" "waldegaard-fenouil"]
-  ["##number##" "medardo"]
-  ["##number##" "rahier"]
-  ["##number##" "ambrosino-baumgartner"]
-  ["##number##" "shinozuka-magne"]
-  ["c" "tanvier"]
-  ["##number##" "orioli"]
-  ["##number##" "picco"]
-  ["i" "demongeot"]
-  ["f" "tél."]
-  ["a" "dechaume"]
-  ["f" "b."]
-  ["##number##" "vatanen-berglund"]
-  ["##number##" "cowan-delferrier"]
-  ["##number##" "masuoka-oligo"]
-  ["##number##" "fermé"]
-  ["##number##" "magnaldi"]]}
+ #{["##number##" "medardo"] ["##number##" "magnaldi"] ["s" "motos"]
+   ["i" "demongeot"] ["##number##" "fermé"] ["f" "b."]
+   ["##number##" "picco"] ["##number##" "masuoka-oligo"]
+   ["a" "dechaume"] ["f" "tél."] ["##number##" "rahier"]
+   ["##number##" "waldegaard-fenouil"]
+   ["##number##" "cowan-delferrier"] ["##number##" "shinozuka-magne"]
+   ["##number##" "ambrosino-baumgartner"]
+   ["##number##" "vatanen-berglund"] ["##number##" "orioli"]
+   ["c" "tanvier"]}}

@@ -60260,103 +60260,22 @@
   "hilfsstoffen" 4,
   "anstellungspraxis" 4},
  :abbrev-types
- ["a.d"
-  "u"
-  "kfr"
-  "48f"
-  "mio"
-  "gfh"
-  "rg"
-  "cs"
-  "ib"
-  "lts"
-  "zr"
-  "hag"
-  "vgl"
-  "z.b"
-  "rp"
-  "gir"
-  "lib"
-  "sc"
-  "dr"
-  "fem"
-  "ne"
-  "rz"
-  "k.a"
-  "usw"
-  "u.a"
-  "chr"
-  "abs"
-  "th"
-  "prof"
-  "fon"
-  "lz"
-  "bd"
-  "med"
-  "fr"
-  "dk"
-  "usf"
-  "bst"
-  "v"
-  "hg"
-  "nkm"
-  "bt"
-  "mgr"
-  "inkl"
-  "ff"
-  "kmu"
-  "bü"
-  "n.r"
-  "mey"
-  "nr"
-  "he"
-  "bzw"
-  "rfr"
-  "c"
-  "sx"
-  "fre"
-  "s.o.s"
-  "f"
-  "crz"
-  "mjm"
-  "k"
-  "j"
-  "m"
-  "d.h"
-  "st"
-  "etc"
-  "69f"
-  "t"
-  "w"
-  "h"
-  "mrd"
-  "liv"],
+ #{"ff" "mey" "st" "bd" "48f" "c" "69f" "bst" "nr" "fon" "sx" "lib" "f"
+   "inkl" "dk" "h" "u.a" "usf" "rz" "gfh" "j" "k" "crz" "lts" "fr"
+   "med" "m" "chr" "dr" "lz" "hag" "fem" "z.b" "cs" "sc" "nkm" "mjm"
+   "gir" "bt" "abs" "n.r" "mio" "kmu" "t" "etc" "th" "u" "rg" "v" "w"
+   "ne" "a.d" "kfr" "mgr" "zr" "ib" "fre" "usw" "liv" "s.o.s" "prof"
+   "bü" "vgl" "he" "rfr" "d.h" "rp" "k.a" "hg" "bzw" "mrd"},
  :collocations
- [["a" "schumpeter"]
-  ["##number##" "dezember"]
-  ["a" "meyer"]
-  ["##number##" "jahrhundert"]
-  ["##number##" "eu-richtlinie"]
-  ["##number##" "februar"]
-  ["##number##" "november"]
-  ["##number##" "jahrhunderts"]
-  ["a" "meyers"]
-  ["##number##" "bauetappe"]
-  ["##number##" "januar"]
-  ["##number##" "geburtstag"]
-  ["##number##" "april"]
-  ["##number##" "freiheit"]
-  ["##number##" "märz"]
-  ["##number##" "august"]
-  ["##number##" "september"]
-  ["##number##" "ahv-revision"]
-  ["##number##" "juli"]
-  ["##number##" "säule"]
-  ["s" "##number##"]
-  ["##number##" "revision"]
-  ["##number##" "mai"]
-  ["##number##" "ahv-"]
-  ["##number##" "altersjahr"]
-  ["##number##" "oktober"]
-  ["##number##" "juni"]
-  ["##number##" "landwirtschaftsbericht"]]}
+ #{["##number##" "juli"] ["##number##" "bauetappe"] ["a" "meyers"]
+   ["##number##" "dezember"] ["##number##" "januar"]
+   ["##number##" "jahrhunderts"] ["##number##" "september"]
+   ["##number##" "november"] ["##number##" "eu-richtlinie"]
+   ["##number##" "mai"] ["a" "meyer"] ["##number##" "februar"]
+   ["##number##" "freiheit"] ["##number##" "landwirtschaftsbericht"]
+   ["##number##" "oktober"] ["##number##" "ahv-revision"]
+   ["##number##" "geburtstag"] ["##number##" "revision"]
+   ["##number##" "säule"] ["##number##" "altersjahr"]
+   ["##number##" "ahv-"] ["##number##" "märz"] ["s" "##number##"]
+   ["##number##" "august"] ["##number##" "jahrhundert"]
+   ["a" "schumpeter"] ["##number##" "april"] ["##number##" "juni"]}}

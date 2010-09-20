@@ -53913,316 +53913,68 @@
   "county-sagen" 4,
   "ultimo-" 2},
  :abbrev-types
- ["dr.med"
-  "kbh"
-  "konk"
-  "dk-sver"
-  "memorandum"
-  "d.v.s"
-  "v.i"
-  "osv"
-  "sct"
-  "mill"
-  "gl"
-  "skt"
-  "vet"
-  "pt"
-  "m.a.s.h"
-  "pct"
-  "kgl"
-  "utraditionelt"
-  "aus"
-  "g.a"
-  "fig"
-  "th"
-  "m.g.i"
-  "adm"
-  "dk-maked"
-  "bl.a"
-  "ø«"
-  "dj"
-  "mou"
-  "fr"
-  "dk-jugo"
-  "st"
-  "v.s.o.d"
-  "h"
-  "l.m.k"
-  "dr.phil"
-  "kitzb"
-  "p"
-  "m.h.t"
-  "t"
-  "cand.jur"
-  "4-bakketur"
-  "mht"
-  "m.fl"
-  "evt"
-  "dir"
-  "s.g"
-  "cand.merc"
-  "s.b"
-  "j.j"
-  "f.kr"
-  "s.j"
-  "d.u.m"
-  "s.h"
-  "p.g.a"
-  "mia"
-  "s.s"
-  "bøddel"
-  "w.ø"
-  "sek"
-  "grundejerform"
-  "atla"
-  "n.j"
-  "superl"
-  "h.c"
-  "derivater"
-  "f.eks"
-  "k.e"
-  "k.b"
-  "t.v"
-  "h.r"
-  "pei"
-  "em-lodtrækn"
-  "m.k"
-  "mag.art"
-  "a.d"
-  "n.n"
-  "o.m.a"
-  "a.a"
-  "bl"
-  "o.a"
-  "a.h"
-  "o.g"
-  "bj"
-  "f.r.i"
-  "a.p"
-  "o.m.m"
-  "a.s"
-  "stud.polit"
-  "jf"
-  "c"
-  "fhv"
-  "johs"
-  "d.c"
-  "beck"
-  "styrt"
-  "e.j"
-  "e.l"
-  "o"
-  "etc"
-  "kl"
-  "e.s"
-  "tlf"
-  "w"
-  "mestersk"
-  "corp"
-  "ndr"
-  "eks"
-  "n.z"
-  "ch"
-  "ca"
-  "cand.mag"
-  "o.s.v"
-  "idrætsgym"
-  "dk-storbrit"
-  "lenz"
-  "cr"
-  "arab.-danm"
-  "pr"
-  "j.h"
-  "præmien"
-  "tilskudsforhold"
-  "j.o"
-  "saalba"
-  "zoeterm"
-  "pers"
-  "int"
-  "chr"
-  "1b"
-  "f.o.m"
-  "j.l"
-  "b.p"
-  "kgs"
-  "sdr"
-  "schw"
-  "hr"
-  "sve"
-  "mountainb"
-  "i«"
-  "o.lign"
-  "hf"
-  "hg"
-  "kld"
-  "fvt"
-  "f"
-  "j"
-  "ik"
-  "stk"
-  "tosset"
-  "mr"
-  "dec"
-  "ill"
-  "aa"
-  "cand"
-  "edb-oplysninger"
-  "engl"
-  "hhv"
-  "sikkerhedssystemerne"
-  "p.t"
-  "sv"
-  "sp"
-  "rens"
-  "pharm"
-  "b.i.g"
-  "tidl"
-  "pokalf"
-  "sav"
-  "inc"
-  "indiv"
-  "idrætsg"
-  "mio"
-  "lic"
-  "afd"
-  "hol"
-  "p.d"
-  "d.a.d"
-  "4-bakketurn"
-  "kbhvn"
-  "r.e.m"
-  "nr"
-  "techn"
-  "fremsættes"
-  "polit"
-  "i.c.i"
-  "faglærte"
-  "c.a"
-  "cand.polit"
-  "m.v"
-  "h.b"
-  "m.m"
-  "mag"
-  "j.k"
-  "m.a"
-  "sportsg"
-  "fl"
-  "m.f"
-  "l.b"
-  "jur"
-  "vm-kval"
-  "årh"
-  "el.lign"
-  "phil"
-  "lrs"
-  "b.t"
-  "kr"
-  "verbalt"
-  "dvs"
-  "sl"
-  "b.c"
-  "dressurst"
-  "j.b.s"],
+ #{"aa" "m.a" "l.b" "sdr" "pct" "e.j" "o.m.a" "w.ø" "kl" "dvs" "konk"
+   "st" "m.g.i" "dec" "ik" "sikkerhedssystemerne" "i«" "pr" "sve" "o.a"
+   "k.e" "c" "cand.merc" "e.l" "o.lign" "evt" "a.p" "sv" "j.b.s" "kld"
+   "fig" "sct" "pharm" "fvt" "nr" "b.p" "pt" "4-bakketur" "j.h" "hol"
+   "ch" "f.r.i" "gl" "lenz" "mr" "dk-storbrit" "mia" "f.eks" "m.f"
+   "vet" "f" "dj" "fl" "f.o.m" "a.s" "p.d" "lic" "utraditionelt" "j.j"
+   "jur" "kr" "s.b" "m.fl" "j.k" "bj" "h" "sportsg" "atla" "r.e.m"
+   "b.t" "o.g" "l.m.k" "mag.art" "j.l" "sav" "præmien" "kbhvn" "ill"
+   "tosset" "verbalt" "bl" "j" "d.u.m" "adm" "hr" "e.s" "4-bakketurn"
+   "stk" "n.j" "m.k" "corp" "el.lign" "j.o" "beck" "vm-kval" "h.r"
+   "dr.med" "fr" "indiv" "s.g" "m.m" "dir" "eks" "chr" "o.m.m" "d.a.d"
+   "s.h" "cand.jur" "idrætsgym" "m.h.t" "lrs" "arab.-danm" "tlf" "n.n"
+   "engl" "o" "cr" "s.j" "em-lodtrækn" "pokalf" "int" "f.kr" "p" "johs"
+   "kgl" "dk-maked" "superl" "d.v.s" "v.i" "kbh" "1b" "osv" "v.s.o.d"
+   "mag" "mio" "ø«" "mou" "tilskudsforhold" "t" "pei" "etc" "a.a" "th"
+   "cand" "fhv" "dressurst" "m.v" "mountainb" "fremsættes" "b.i.g"
+   "c.a" "p.t" "pers" "hhv" "dk-sver" "grundejerform" "w" "b.c" "a.d"
+   "kgs" "memorandum" "polit" "techn" "saalba" "s.s" "rens" "sek"
+   "dk-jugo" "d.c" "mht" "sl" "idrætsg" "i.c.i" "cand.mag" "g.a"
+   "stud.polit" "styrt" "n.z" "phil" "årh" "a.h" "dr.phil" "mill"
+   "zoeterm" "h.b" "edb-oplysninger" "skt" "jf" "ndr" "t.v" "p.g.a"
+   "o.s.v" "h.c" "tidl" "sp" "faglærte" "bøddel" "bl.a" "cand.polit"
+   "ca" "kitzb" "hf" "mestersk" "derivater" "inc" "afd" "hg" "m.a.s.h"
+   "aus" "schw" "k.b"},
  :collocations
- [["##number##" "roning"]
-  ["##number##" "basketball"]
-  ["##number##" "rally"]
-  ["##number##" "symfoni"]
-  ["##number##" "maj"]
-  ["##number##" "speedway"]
-  ["##number##" "rugby"]
-  ["##number##" "dm-fin"]
-  ["##number##" "håndbold"]
-  ["##number##" "trav"]
-  ["##number##" "brydning"]
-  ["##number##" "sejlsport"]
-  ["k" "jørgensen"]
-  ["##number##" "klasses"]
-  ["s" "h."]
-  ["##number##" "triathlon"]
-  ["##number##" "heks"]
-  ["##number##" "badminton"]
-  ["##number##" "december"]
-  ["##number##" "september"]
-  ["##number##" "sal"]
-  ["##number##" "dm-finale"]
-  ["a" "p."]
-  ["##number##" "provins"]
-  ["##number##" "cykling"]
-  ["k" "telefax"]
-  ["##number##" "århundredes"]
-  ["e" "jørgensen"]
-  ["##number##" "bowling"]
-  ["##number##" "alp.ski"]
-  ["##number##" "gymnastik"]
-  ["##number##" "atletik"]
-  ["##number##" "runde"]
-  ["##number##" "kano/kajak"]
-  ["##number##" "dm"]
-  ["m" "jensen"]
-  ["##number##" "galop"]
-  ["##number##" "skihop"]
-  ["k" "axel"]
-  ["##number##" "taekwondo"]
-  ["k" "e"]
-  ["##number##" "minut"]
-  ["##number##" "januar"]
-  ["##number##" "april"]
-  ["g" "h."]
-  ["##number##" "fodbold"]
-  ["##number##" "gyldendal"]
-  ["##number##" "viceformand"]
-  ["##number##" "oktober"]
-  ["##number##" "volleyball"]
-  ["##number##" "verdenskrig"]
-  ["##number##" "ishockey"]
-  ["e" "løgstrup"]
-  ["##number##" "juni"]
-  ["r" "førsund"]
-  ["##number##" "kunstskøjteløb"]
-  ["k" "nielsen"]
-  ["b" "jørgensen"]
-  ["##number##" "hurtigløb"]
-  ["##number##" "tennis"]
-  ["##number##" "årh."]
-  ["##number##" "århundrede"]
-  ["##number##" "svømning"]
-  ["s" "kr."]
-  ["##number##" "dec."]
-  ["i" "pedersens"]
-  ["##number##" "klasse"]
-  ["##number##" "tw"]
-  ["##number##" "juli"]
-  ["##number##" "klaverkoncert"]
-  ["e" "rosenfeldt"]
-  ["##number##" "trampolin"]
-  ["##number##" "marts"]
-  ["m" "skræl"]
-  ["##number##" "skak"]
-  ["##number##" "juledag"]
-  ["k" "jensen"]
-  ["##number##" "judo"]
-  ["##number##" "etage"]
-  ["k" "o."]
-  ["##number##" "sektion"]
-  ["##number##" "formel"]
-  ["##number##" "februar"]
-  ["##number##" "november"]
-  ["e" "andersen"]
-  ["##number##" "bordtennis"]
-  ["d" "roosevelt"]
-  ["m" "andersen"]
-  ["##number##" "boksning"]
-  ["##number##" "jörgen"]
-  ["##number##" "august"]
-  ["d" "##number##"]
-  ["##number##" "afd."]
-  ["##number##" "marathon"]
-  ["##number##" "division"]
-  ["e" "jacobsen"]
-  ["##number##" "dm-semifin"]
-  ["##number##" "neb"]
-  ["##number##" "golf"]
-  ["##number##" "kamp"]
-  ["##number##" "ridning"]]}
+ #{["##number##" "alp.ski"] ["##number##" "speedway"] ["g" "h."]
+   ["##number##" "trampolin"] ["##number##" "juli"]
+   ["##number##" "hurtigløb"] ["##number##" "dm"]
+   ["##number##" "boksning"] ["##number##" "jörgen"]
+   ["##number##" "rally"] ["##number##" "atletik"] ["##number##" "neb"]
+   ["##number##" "klaverkoncert"] ["##number##" "symfoni"]
+   ["##number##" "cykling"] ["##number##" "formel"]
+   ["##number##" "volleyball"] ["##number##" "runde"]
+   ["##number##" "dec."] ["##number##" "svømning"]
+   ["##number##" "ishockey"] ["##number##" "sektion"]
+   ["##number##" "division"] ["k" "jørgensen"] ["##number##" "klasses"]
+   ["d" "##number##"] ["##number##" "taekwondo"]
+   ["##number##" "verdenskrig"] ["##number##" "århundredes"]
+   ["##number##" "januar"] ["##number##" "brydning"]
+   ["##number##" "afd."] ["r" "førsund"] ["##number##" "etage"]
+   ["##number##" "gymnastik"] ["##number##" "roning"]
+   ["##number##" "minut"] ["k" "telefax"] ["##number##" "september"]
+   ["##number##" "november"] ["i" "pedersens"] ["##number##" "årh."]
+   ["##number##" "trav"] ["##number##" "dm-finale"]
+   ["##number##" "galop"] ["e" "jørgensen"] ["m" "andersen"]
+   ["e" "løgstrup"] ["##number##" "maj"] ["##number##" "judo"]
+   ["##number##" "kunstskøjteløb"] ["##number##" "marathon"]
+   ["b" "jørgensen"] ["##number##" "februar"] ["##number##" "håndbold"]
+   ["##number##" "skihop"] ["k" "nielsen"] ["##number##" "oktober"]
+   ["##number##" "kamp"] ["##number##" "dm-semifin"]
+   ["##number##" "bordtennis"] ["##number##" "rugby"]
+   ["##number##" "tennis"] ["e" "andersen"] ["##number##" "gyldendal"]
+   ["s" "h."] ["m" "skræl"] ["k" "axel"] ["s" "kr."] ["k" "o."]
+   ["##number##" "marts"] ["##number##" "viceformand"]
+   ["##number##" "sal"] ["##number##" "fodbold"] ["d" "roosevelt"]
+   ["##number##" "bowling"] ["##number##" "sejlsport"]
+   ["##number##" "triathlon"] ["##number##" "ridning"] ["e" "jacobsen"]
+   ["e" "rosenfeldt"] ["##number##" "golf"] ["##number##" "skak"]
+   ["k" "e"] ["##number##" "august"] ["##number##" "tw"]
+   ["##number##" "århundrede"] ["m" "jensen"] ["##number##" "klasse"]
+   ["##number##" "heks"] ["##number##" "provins"]
+   ["##number##" "december"] ["##number##" "basketball"]
+   ["##number##" "juledag"] ["##number##" "badminton"] ["a" "p."]
+   ["##number##" "kano/kajak"] ["##number##" "april"]
+   ["##number##" "juni"] ["k" "jensen"] ["##number##" "dm-fin"]}}

@@ -20366,197 +20366,32 @@
   "weyerhaeuser" 12,
   "hires" 32},
  :abbrev-types
- ["w.c"
-  "ala"
-  "w.r"
-  "colo"
-  "w.w"
-  "ga"
-  "s.a.y"
-  "c.o.m.b"
-  "aug"
-  "wed"
-  "jan"
-  "lt"
-  "adm"
-  "oct"
-  "reps"
-  "nov"
-  "yr"
-  "dr"
-  "gen"
-  "w.va"
-  "d.c"
-  "d"
-  "h"
-  "tues"
-  "p"
-  "ph.d"
-  "t"
-  "r.k"
-  "s.g"
-  "r.i"
-  "r.h"
-  "s.c"
-  "sep"
-  "r.a"
-  "m.b.a"
-  "l"
-  "p.a.m"
-  "sen"
-  "r.t"
-  "h.c"
-  "tenn"
-  "h.f"
-  "rep"
-  "n.h"
-  "h.m"
-  "a.m.e"
-  "nev"
-  "prof"
-  "calif"
-  "a.d"
-  "n.m"
-  "a.g"
-  "a.a"
-  "a.c"
-  "a.m"
-  "n.d"
-  "n.c"
-  "jr"
-  "l.p"
-  "a.t"
-  "corp"
-  "n.y"
-  "s.p.a"
-  "n.v"
-  "u.s.s.r"
-  "ore"
-  "c"
-  "ok"
-  "g"
-  "e.h"
-  "k"
-  "e.l"
-  "e.m"
-  "s"
-  "w"
-  "ltd"
-  "c.i.t"
-  "sept"
-  "col"
-  "i.m.s"
-  "okla"
-  "co"
-  "r.j"
-  "a.s"
-  "wash"
-  "wis"
-  "ct"
-  "ariz"
-  "l.f"
-  "feb"
-  "chg"
-  "fri"
-  "s.a"
-  "pa"
-  "s.s"
-  "n.j"
-  "cos"
-  ". . "
-  "u.s.a"
-  "mich"
-  "mg"
-  "e.f"
-  "cie"
-  "f"
-  "n"
-  "r"
-  "ms"
-  "mr"
-  "fla"
-  "p.m"
-  "dec"
-  "ill"
-  "m.d.c"
-  "va"
-  "v"
-  "minn"
-  "m"
-  "bros"
-  "d.h"
-  "vs"
-  "vt"
-  "ave"
-  "mrs"
-  "conn"
-  "inc"
-  "u.s"
-  "d.w"
-  "f.g"
-  "g.f"
-  "g.d"
-  "messrs"
-  "g.k"
-  "u.k"
-  "f.j"
-  "u.n"
-  "t.j"
-  "j.r"
-  "j.p"
-  "ft"
-  "kan"
-  "j.c"
-  "j.b"
-  "m.j"
-  "a.h"
-  "j.k"
-  "j.j"
-  "maj"
-  "l.a"
-  "c.v"
-  "e"
-  "sr"
-  "sw"
-  "b.v"
-  "st"
-  "ky"
-  "b.f"],
+ #{"h.f" "w.w" "oct" "col" "a.m" "st" "mich" "wis" "dec" "chg" "f.j"
+   "ariz" "ore" "w.va" "p.a.m" "c" "e.l" "n.c" "u.s.s.r" "feb" "c.i.t"
+   "d" "g.k" "e.m" "sw" "n.d" ". . " "l.f" "e" "mr" "r.a" "f" "ms"
+   "s.a" "a.s" "j.j" "g" "h.m" "cos" "a.t" "j.k" "h" "jr" "lt" "s.c"
+   "s.p.a" "n.h" "m.j" "ill" "adm" "b.v" "n.j" "corp" "k" "calif" "c.v"
+   "va" "l" "co" "w.c" "s.g" "r.h" "conn" "j.p" "i.m.s" "m" "u.s.a"
+   "d.w" "r.i" "n.m" "n" "dr" "ft" "ky" "r.j" "ph.d" "l.p" "mrs" "j.r"
+   "r.k" "p.m" "colo" "tues" "p" "t.j" "ave" "gen" "okla" "ct" "pa"
+   "s.a.y" "tenn" "r" "u.k" "s" "aug" "t" "m.b.a" "a.a" "bros" "u.n"
+   "nov" "v" "maj" "ala" "a.c" "n.v" "wed" "reps" "sept" "a.m.e" "w"
+   "jan" "a.d" "c.o.m.b" "m.d.c" "s.s" "kan" "r.t" "d.c" "messrs" "n.y"
+   "yr" "prof" "ga" "u.s" "mg" "b.f" "a.g" "fla" "w.r" "a.h" "minn"
+   "sen" "ok" "ltd" "h.c" "g.d" "rep" "e.f" "fri" "vs" "sep" "d.h" "vt"
+   "j.b" "inc" "g.f" "cie" "f.g" "e.h" "nev" "sr" "wash" "l.a" "j.c"},
  :collocations
- [["##number##" "corrections"]
-  ["j" "aron"]
-  ["b" "wigton"]
-  ["##number##" "insider"]
-  ["##number##" "pay-fone"]
-  ["b" "levine"]
-  ["o" "ludcke"]
-  ["##number##" "international"]
-  ["##number##" "cbot"]
-  ["##number##" "letters"]
-  ["##number##" "business"]
-  ["##number##" "review"]
-  ["i" "magnin"]
-  ["##number##" "who"]
-  ["b" "edelman"]
-  ["##number##" "pepper"]
-  ["##number##" "financing"]
-  ["##number##" "dividend"]
-  ["##number##" "notable"]
-  ["##number##" "leisure"]
-  ["##number##" "genentech"]
-  ["##number##" "credit"]
-  ["##number##" "cooper"]
-  ["##number##" "henley"]
-  ["j" "fialka"]
-  ["##number##" "zimmer"]
-  ["##number##" "colgate"]
-  ["##number##" "aes"]
-  ["i" "toussie"]
-  ["b" "smith"]
-  ["##number##" "wedgestone"]
-  ["j" "walter"]
-  ["##number##" "commodities"]
-  ["b" "stewart"]
-  ["##number##" "pegasus"]
-  ["##number##" "abreast"]
-  ["##number##" "rj"]]}
+ #{["b" "levine"] ["b" "smith"] ["##number##" "colgate"]
+   ["##number##" "commodities"] ["##number##" "letters"]
+   ["##number##" "notable"] ["##number##" "international"]
+   ["##number##" "abreast"] ["##number##" "henley"]
+   ["##number##" "genentech"] ["j" "aron"] ["##number##" "dividend"]
+   ["##number##" "aes"] ["##number##" "wedgestone"]
+   ["##number##" "corrections"] ["i" "toussie"]
+   ["##number##" "insider"] ["##number##" "financing"] ["b" "stewart"]
+   ["##number##" "rj"] ["##number##" "review"] ["##number##" "credit"]
+   ["##number##" "cooper"] ["b" "edelman"] ["o" "ludcke"]
+   ["##number##" "zimmer"] ["j" "walter"] ["##number##" "who"]
+   ["i" "magnin"] ["##number##" "business"] ["##number##" "pepper"]
+   ["##number##" "pegasus"] ["j" "fialka"] ["##number##" "cbot"]
+   ["b" "wigton"] ["##number##" "leisure"] ["##number##" "pay-fone"]}}

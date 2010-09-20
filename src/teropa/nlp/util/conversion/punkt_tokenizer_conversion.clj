@@ -31,14 +31,15 @@
               (File. "resources/tokenizers/punkt")
               (into-array ["pickle"])
               false)]
+    (println "Converting" f)
     (let [res (sh/sh "python" "-c" (python-command f)
                 :env {"NLTK_DATA" (data-path)})
           params (json/read-json (:out res) false)]
       (with-open [w (streams/writer (clojure-file f))]
         (binding [*out* w]
           (pp/pprint {:ortho-context (params "ortho-context")
-                      :abbrev-types (params "abbrev_types")
-                      :collocations (params "collocations")}))))))
+                      :abbrev-types (apply hash-set (params "abbrev_types"))
+                      :collocations (apply hash-set (params "collocations"))}))))))
 
 
 

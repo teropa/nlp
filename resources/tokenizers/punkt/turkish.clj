@@ -45926,85 +45926,18 @@
   "sertifikasına" 32,
   "yaratmasıyla" 32},
  :abbrev-types
- ["'dı"
-  "r.i"
-  "s.b"
-  "s.a"
-  "s.n"
-  "h.g"
-  "kaçınılmazdı"
-  "ö.k"
-  "b.v"
-  "s.ö"
-  "hazırlamıştım"
-  "vs"
-  "göndermişlerdi"
-  "bg"
-  "org"
-  "st"
-  "işletilen"
-  "yaşındayım"
-  "dı"
-  "t.t"
-  "kom"
-  "sonuçlanmadı"
-  "g.t"
-  "ç.y"
-  "yrd"
-  "s"
-  "f.y"
-  "başlatılıp,"
-  "bulunacak"
-  "lt"
-  "cevaplandırdı"
-  "f.b"
-  "f.a"
-  "prof"
-  "g.h"
-  "hz"
-  "bulamadı"
-  "bşk"
-  "t.c"
-  "idi"
-  "müd"
-  "a.ü"
-  "'di"
-  "öğrendim"
-  "dr"
-  "kg"
-  "akşamcı"
-  "s.o.s"
-  "kaldırıyordu"
-  "e.ü"
-  "k"
-  "h.ç"
-  "m"
-  "doç"
-  "kazanıyorlar"
-  "um"
-  "b.ü"
-  "'dur"
-  "erdi"
-  "sn"
-  "s.h.h"
-  "ltd"
-  "kalmıştım"
-  "kaçabilir"
-  "a.ş"
-  "indi"
-  "ü"],
+ #{"h.g" "g.h" "h.ç" "kazanıyorlar" "st" "org" "yaşındayım" "bg" "s.a"
+   "s.h.h" "s.b" "lt" "t.c" "bulamadı" "kom" "indi" "kaçınılmazdı"
+   "b.v" "k" "yrd" "kalmıştım" "kaldırıyordu" "'di" "hazırlamıştım" "m"
+   "g.t" "dı" "r.i" "göndermişlerdi" "dr" "idi" "bşk" "akşamcı" "a.ü"
+   "b.ü" "f.y" "işletilen" "hz" "ç.y" "erdi" "a.ş" "s" "ö.k" "e.ü"
+   "s.n" "başlatılıp," "'dı" "müd" "öğrendim" "sonuçlanmadı" "um" "f.a"
+   "s.o.s" "prof" "'dur" "f.b" "t.t" "s.ö" "sn" "ü" "kg" "doç"
+   "cevaplandırdı" "ltd" "vs" "bulunacak" "kaçabilir"},
  :collocations
- [["a" "'yı"]
-  ["##number##" "maddesiyle"]
-  ["##number##" "maddesindeki"]
-  ["##number##" "maddesi"]
-  ["##number##" "maddelerinde"]
-  ["##number##" "madde"]
-  ["##number##" "maddesinin"]
-  ["a" "'nın"]
-  ["##number##" "yüzyıl"]
-  ["##number##" "paralelin"]
-  ["##number##" "maddesinden"]
-  ["##number##" "maddesine"]
-  ["##number##" "maddesinde"]
-  ["##number##" "dakikasında"]]}
+ #{["##number##" "maddesinde"] ["##number##" "maddesiyle"] ["a" "'nın"]
+   ["##number##" "maddesinin"] ["##number##" "maddelerinde"]
+   ["##number##" "madde"] ["##number##" "paralelin"]
+   ["##number##" "dakikasında"] ["##number##" "yüzyıl"]
+   ["##number##" "maddesine"] ["##number##" "maddesinden"]
+   ["##number##" "maddesindeki"] ["a" "'yı"] ["##number##" "maddesi"]}}

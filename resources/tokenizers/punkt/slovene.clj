@@ -35434,151 +35434,39 @@
   "zaposliti" 32,
   "legitimnost" 100},
  :abbrev-types
- ["itn"
-  "roj"
-  "co"
-  "mag"
-  "ipd"
-  "tzv"
-  "pov"
-  "sms"
-  "sti"
-  "č"
-  "pos"
-  "vma"
-  "đ"
-  "im"
-  "št"
-  "v.p"
-  "n"
-  "rib"
-  "inc"
-  "pr"
-  "feb"
-  "zloma"
-  "imf"
-  "akti"
-  "tov"
-  "l0"
-  "tir"
-  "xvi"
-  "r"
-  "tj"
-  "xiv"
-  "ada"
-  "čl"
-  "čustven"
-  "t.i"
-  "reg"
-  "t"
-  "b.s"
-  "w"
-  "egs"
-  "otc"
-  "m"
-  "mt"
-  "nezaposlenih"
-  "pc9"
-  "con"
-  "br"
-  "prof"
-  "člov"
-  "org"
-  "iii"
-  "npr"
-  "š"
-  "c"
-  "b"
-  "d"
-  "g"
-  "f"
-  "odst"
-  "instituciona"
-  "j"
-  "gld"
-  "sv"
-  "us"
-  "st"
-  "dr"
-  "p"
-  "ico"
-  "oz"
-  "str"
-  "cit"
-  "op"
-  "ž"],
+ #{"š" "op" "st" "b" "con" "pr" "imf" "c" "itn" "sv" "feb" "d" "im"
+   "l0" "org" "xiv" "f" "pc9" "člov" "g" "mt" "b.s" "sti" "iii" "j"
+   "vma" "rib" "xvi" "oz" "co" "m" "č" "roj" "n" "dr" "cit" "t.i" "br"
+   "p" "tzv" "npr" "egs" "đ" "zloma" "str" "r" "mag" "št" "t" "reg"
+   "pos" "ico" "čustven" "tj" "odst" "w" "pov" "v.p" "instituciona"
+   "sms" "prof" "tov" "ipd" "tir" "ada" "nezaposlenih" "ž" "us" "otc"
+   "inc" "gld" "akti" "čl"},
  :collocations
- [["v" "gotovac"]
-  ["##number##" "junij"]
-  ["##number##" "členu"]
-  ["##number##" "kongresa"]
-  ["##number##" "čl."]
-  ["##number##" "iii."]
-  ["##number##" "maja"]
-  ["##number##" "maj"]
-  ["i" "b."]
-  ["##number##" "uro"]
-  ["z" "l"]
-  ["##number##" "julij"]
-  ["##number##" "kongresu"]
-  ["##number##" "številko"]
-  ["##number##" "odstavek"]
-  ["##number##" "armade"]
-  ["s" "hribar"]
-  ["e" "ljubljana"]
-  ["##number##" "januarja"]
-  ["##number##" "oktobra"]
-  ["##number##" "februarja"]
-  ["##number##" "sati"]
-  ["##number##" "##number##"]
-  ["##number##" "točke"]
-  ["v" "blažič"]
-  ["##number##" "decembra"]
-  ["##number##" "športno"]
-  ["i" "bavčar"]
-  ["i" "u"]
-  ["##number##" "številki"]
-  ["a" "puhar"]
-  ["##number##" "odstavka"]
-  ["##number##" "zkp"]
-  ["##number##" "uri"]
-  ["##number##" "pivovarna"]
-  ["s" "p."]
-  ["a" "plavevska"]
-  ["##number##" "december"]
-  ["##number##" "člena"]
-  ["##number##" "stoletju"]
-  ["s" "broveta"]
-  ["##number##" "septembra"]
-  ["i" "španski"]
-  ["##number##" "julija"]
-  ["##number##" "majem"]
-  ["##number##" "junijem"]
-  ["##number##" "člen"]
-  ["##number##" "mura"]
-  ["##number##" "novembra"]
-  ["v" "britanija"]
-  ["k" "zalival"]
-  ["##number##" "kongres"]
-  ["##number##" "redne"]
-  ["##number##" "lanski"]
-  ["i" "p."]
-  ["l" "d."]
-  ["##number##" "godine"]
-  ["##number##" "junija"]
-  ["##number##" "stoletja"]
-  ["##number##" "obletnico"]
-  ["##number##" "marca"]
-  ["k" "b."]
-  ["##number##" "aprila"]
-  ["##number##" "ure"]
-  ["##number##" "iv"]
-  ["v" "p."]
-  ["##number##" "stoletje"]
-  ["a" "novak"]
-  ["##number##" "marec"]
-  ["i" "borštnerja"]
-  ["##number##" "član"]
-  ["##number##" "feb."]
-  ["##number##" "členom"]
-  ["i" "razreda"]]}
+ #{["##number##" "ure"] ["v" "gotovac"] ["##number##" "člen"]
+   ["##number##" "redne"] ["##number##" "stoletje"]
+   ["##number##" "pivovarna"] ["##number##" "##number##"] ["k" "b."]
+   ["s" "hribar"] ["##number##" "feb."] ["##number##" "maja"]
+   ["v" "britanija"] ["##number##" "številko"] ["i" "b."]
+   ["##number##" "uri"] ["##number##" "član"] ["##number##" "točke"]
+   ["##number##" "junijem"] ["##number##" "iv"] ["##number##" "členu"]
+   ["##number##" "februarja"] ["a" "plavevska"] ["e" "ljubljana"]
+   ["##number##" "obletnico"] ["##number##" "čl."] ["s" "broveta"]
+   ["##number##" "odstavek"] ["v" "p."] ["##number##" "uro"]
+   ["##number##" "kongresu"] ["##number##" "septembra"]
+   ["##number##" "novembra"] ["s" "p."] ["i" "španski"] ["i" "u"]
+   ["##number##" "maj"] ["##number##" "mura"] ["##number##" "stoletju"]
+   ["##number##" "lanski"] ["##number##" "člena"]
+   ["##number##" "oktobra"] ["i" "borštnerja"] ["i" "razreda"]
+   ["##number##" "aprila"] ["k" "zalival"] ["z" "l"]
+   ["##number##" "marca"] ["##number##" "marec"] ["a" "puhar"]
+   ["##number##" "junija"] ["v" "blažič"] ["i" "p."]
+   ["##number##" "kongresa"] ["##number##" "majem"]
+   ["##number##" "julija"] ["##number##" "zkp"]
+   ["##number##" "odstavka"] ["##number##" "julij"]
+   ["##number##" "sati"] ["##number##" "kongres"]
+   ["##number##" "športno"] ["##number##" "godine"]
+   ["##number##" "stoletja"] ["##number##" "junij"]
+   ["##number##" "iii."] ["##number##" "številki"]
+   ["##number##" "december"] ["##number##" "členom"]
+   ["##number##" "januarja"] ["##number##" "armade"]
+   ["##number##" "decembra"] ["l" "d."] ["a" "novak"] ["i" "bavčar"]}}

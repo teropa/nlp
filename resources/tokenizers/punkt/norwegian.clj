@@ -54125,164 +54125,35 @@
   "to-instans-ordningen" 32,
   "knivbladene" 32},
  :abbrev-types
- ["d.v.s"
-  "osv"
-  "sifre"
-  "5.n7"
-  "mill"
-  "g.c"
-  "f.-eks"
-  "adm"
-  "dm"
-  "c.h"
-  "st"
-  "dr"
-  "d.å"
-  "p"
-  "t"
-  "h.h.v"
-  "r.c"
-  "ex"
-  "ev"
-  "h.c"
-  "h.e"
-  "h.g"
-  "tjenesteforsømmelse"
-  "sam.pol"
-  "h.m"
-  "bl.a"
-  "o.h"
-  "wc"
-  "o.l"
-  "o.a"
-  "jr"
-  "bk"
-  "i.l"
-  "a.s"
-  "d.e"
-  "b.b"
-  "d.c"
-  "k"
-  "schlickernrieder"
-  "startstreken"
-  "etc"
-  "w"
-  "jfr"
-  "d.y"
-  "m.m"
-  "kfr"
-  "pga"
-  "cc"
-  "ca"
-  "ce"
-  "pol"
-  "o.s.v"
-  "adm.dir"
-  "m.a"
-  "pr"
-  "sam"
-  "dæhlie-triumf"
-  "gj.v"
-  "f.å"
-  "chr"
-  "p.p"
-  "e.e.o"
-  "udv"
-  "th"
-  "hr"
-  "i.h.h.t"
-  "fung"
-  "hi"
-  "b"
-  "f"
-  "j"
-  ".e"
-  "r"
-  "uh"
-  "str"
-  "mr"
-  "b.i.t"
-  "anm"
-  "p.t"
-  "avd"
-  "kl"
-  "inc"
-  "f.w"
-  "f.v"
-  "t.v"
-  "miljøvernavdelingen"
-  "t.d"
-  "nr"
-  "t.h"
-  "fr"
-  "j.v"
-  "l.t"
-  "m.v"
-  "l.h"
-  "ø"
-  "fenomen"
-  "j.o"
-  "f.eks"
-  "kk"
-  "mil.org"
-  "mrs"
-  "c.c"
-  "mrd"
-  "bås"
-  "c.j"
-  "dvs"],
+ #{"cc" "kk" "anm" "m.a" "h.g" "hi" "kl" "dvs" "st" "b" "ce" "5.n7"
+   "pr" "o.a" "i.h.h.t" "b.i.t" "sifre" "nr" "mr" "f.eks" "f" "a.s"
+   "mil.org" "l.h" "i.l" "h.m" "r.c" "schlickernrieder" "udv" "jr"
+   "f.-eks" "fung" "bk" "dm" "adm.dir" "tjenesteforsømmelse" "o.h" "j"
+   "adm" "hr" "pga" "t.d" "h.h.v" "k" "gj.v" "j.o" "fr" "wc" "m.m"
+   "chr" "pol" "o.l" "dr" "f.v" "t.h" "dæhlie-triumf" "mrs" "f.w" "d.y"
+   "avd" "bås" "p" "d.v.s" "ev" "str" "r" "p.p" "osv" "l.t" "j.v" "ex"
+   "uh" "t" "etc" "th" "m.v" "b.b" "p.t" "jfr" "fenomen" "w" ".e" "kfr"
+   "ø" "c.c" "d.c" "d.e" "d.å" "mill" "g.c" "t.v" "o.s.v" "e.e.o" "h.c"
+   "f.å" "c.h" "bl.a" "ca" "miljøvernavdelingen" "startstreken"
+   "sam.pol" "inc" "h.e" "c.j" "mrd" "sam"},
  :collocations
- [["o" "henrik"]
-  ["m" "bjelland"]
-  ["##number##" "etappen"]
-  ["##number##" "divisjonskamper"]
-  ["##number##" "omgang"]
-  ["##number##" "nurmis"]
-  ["##number##" "nyttårsdag"]
-  ["d" "hillgaar"]
-  ["##number##" "runde"]
-  ["c" "sjaastad"]
-  ["m" "lillebø"]
-  ["##number##" "runden"]
-  ["##number##" "viseformann"]
-  ["m" "skjærstad"]
-  ["d" "hagesæther"]
-  ["##number##" "d.å."]
-  ["##number##" "februar"]
-  ["##number##" "desember"]
-  ["##number##" "november"]
-  ["##number##" "omgangen"]
-  ["##number##" "minutt"]
-  ["n" "kristiansen"]
-  ["a" "hoffman"]
-  ["##number##" "divisjonslag"]
-  ["##number##" "skaff"]
-  ["h" "reimers"]
-  ["a" "pettersen"]
-  ["##number##" "januar"]
-  ["##number##" "mars"]
-  ["h" "spang"]
-  ["m" "pedersen"]
-  ["##number##" "april"]
-  ["##number##" "plass"]
-  ["##number##" "august"]
-  ["##number##" "september"]
-  ["i" "hagen"]
-  ["##number##" "juli"]
-  ["##number##" "divisjon"]
-  ["c" "sundts"]
-  ["a" "himle"]
-  ["##number##" "divisjonslaget"]
-  ["g" "larsen"]
-  ["##number##" "mai"]
-  ["i" "eliassen"]
-  ["h" "rowe"]
-  ["##number##" "oktober"]
-  ["##number##" "etasje"]
-  ["##number##" "jubileumsår"]
-  ["##number##" "klasse"]
-  ["##number##" "plassen"]
-  ["##number##" "mars-tog"]
-  ["##number##" "juni"]
-  ["##number##" "divisjonsnivå"]
-  ["a" "robinson"]]}
+ #{["i" "eliassen"] ["##number##" "juli"] ["##number##" "skaff"]
+   ["##number##" "divisjonskamper"] ["##number##" "nurmis"]
+   ["h" "rowe"] ["##number##" "runde"] ["##number##" "divisjonslag"]
+   ["a" "himle"] ["##number##" "plassen"] ["##number##" "divisjon"]
+   ["##number##" "nyttårsdag"] ["##number##" "divisjonsnivå"]
+   ["##number##" "januar"] ["d" "hagesæther"] ["a" "robinson"]
+   ["h" "reimers"] ["d" "hillgaar"] ["##number##" "omgang"]
+   ["##number##" "september"] ["##number##" "november"]
+   ["##number##" "d.å."] ["##number##" "mars-tog"] ["##number##" "mai"]
+   ["##number##" "desember"] ["##number##" "mars"] ["m" "bjelland"]
+   ["i" "hagen"] ["##number##" "februar"] ["##number##" "viseformann"]
+   ["##number##" "oktober"] ["m" "lillebø"] ["##number##" "omgangen"]
+   ["##number##" "etappen"] ["a" "hoffman"] ["##number##" "etasje"]
+   ["m" "pedersen"] ["##number##" "divisjonslaget"]
+   ["##number##" "jubileumsår"] ["o" "henrik"] ["c" "sundts"]
+   ["m" "skjærstad"] ["h" "spang"] ["g" "larsen"] ["c" "sjaastad"]
+   ["##number##" "runden"] ["a" "pettersen"] ["##number##" "august"]
+   ["##number##" "minutt"] ["n" "kristiansen"] ["##number##" "klasse"]
+   ["##number##" "plass"] ["##number##" "april"]
+   ["##number##" "juni"]}}

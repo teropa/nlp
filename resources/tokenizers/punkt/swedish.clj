@@ -44485,51 +44485,13 @@
   "dåres" 32,
   "bottenull" 32},
  :abbrev-types
- ["åk"
-  "postst"
-  "resp"
-  "s.k"
-  "ppm"
-  "p.g.a"
-  "o.s.v"
-  "ex"
-  "rif"
-  "z.b"
-  "dna"
-  "t.ex"
-  "ordf"
-  "prop"
-  "hrm"
-  "f.d"
-  "bl.a"
-  "f.n"
-  "jaha"
-  "fig"
-  "hushålln.-sällsk"
-  "bf"
-  "landtm.-förb"
-  "ital"
-  "o.d"
-  "kap"
-  "m.m"
-  "mom"
-  "osv"
-  "rskr"
-  "t.o.m"
-  "mm"
-  "e.m"
-  "f.m"
-  "p"
-  "aig"
-  "m.fl"
-  "dir"
-  "föreläsn.-fören"],
+ #{"mm" "postst" "landtm.-förb" "hrm" "prop" "fig" "bf" "e.m" "f.m"
+   "ordf" "o.d" "åk" "f.n" "m.fl" "rskr" "mom" "m.m" "t.ex" "dir" "ppm"
+   "z.b" "rif" "p" "jaha" "s.k" "resp" "osv" "ex" "hushålln.-sällsk"
+   "t.o.m" "föreläsn.-fören" "ital" "dna" "kap" "f.d" "p.g.a" "o.s.v"
+   "bl.a" "aig"},
  :collocations
- [["r" "broline"]
-  ["s" "översättning"]
-  ["##number##" "rättens"]
-  ["##number##" "uppgifter"]
-  ["##number##" "civilförsvarspliktiga"]
-  ["##number##" "dragen"]
-  ["j" "r"]
-  ["s" "##number##"]]}
+ #{["s" "översättning"] ["r" "broline"] ["j" "r"]
+   ["##number##" "uppgifter"] ["##number##" "rättens"]
+   ["##number##" "civilförsvarspliktiga"] ["##number##" "dragen"]
+   ["s" "##number##"]}}

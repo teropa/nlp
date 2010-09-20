@@ -52789,218 +52789,48 @@
   "našemu" 32,
   "bergmana" 8},
  :abbrev-types
- ["resp"
-  "př"
-  "např"
-  "phdr"
-  "tr"
-  "tl"
-  "okr"
-  "množ"
-  "líp"
-  "pplk"
-  "přek"
-  "kupř"
-  "dr"
-  "gen"
-  "d"
-  "l"
-  "p"
-  "zdi"
-  "t"
-  "t.zv"
-  "žitě"
-  "č"
-  "šp"
-  "čkd"
-  "ard"
-  "čp"
-  "čs"
-  "arg"
-  "zv"
-  "n"
-  "drsc"
-  "hl.m"
-  "apod"
-  "kl"
-  "q.p.r"
-  "xvi"
-  "pen"
-  "prof"
-  "ict"
-  "o.k"
-  "a.g"
-  "bl"
-  "jr"
-  "i.m"
-  "a.s"
-  "org"
-  "ravenně"
-  "š"
-  "g"
-  "etc"
-  "w"
-  "lok"
-  "op"
-  "vic"
-  "ch"
-  "tř"
-  "vii"
-  "pok"
-  "plk"
-  "m3"
-  "atď"
-  "mudr"
-  "jug"
-  "al"
-  "hl"
-  "b"
-  "roč"
-  "f"
-  "ml"
-  "j"
-  "mj"
-  "ul"
-  "r"
-  "r.i.v"
-  "uh"
-  "str"
-  "judr"
-  "fuk"
-  "s.p"
-  "tzv"
-  "vi"
-  "p.s"
-  "vl"
-  "rak"
-  "u.s.a"
-  "iv"
-  "vr"
-  "st.celsia"
-  "ing"
-  "tzn"
-  "u.s"
-  "mil"
-  "min"
-  "s.r.o"
-  "r.s.c"
-  "csc"
-  "tis"
-  "nar"
-  "ceo"
-  "mir"
-  "t.j"
-  "mar"
-  "j.h"
-  "j.o"
-  "man"
-  "e"
-  "viii"
-  "doc"
-  "t.r"
-  "m"
-  "sv"
-  "st"
-  "kr"
-  "kv"
-  "y"
-  "sb"
-  "ú"
-  "c.k"],
+ #{"c.k" "š" "kl" "op" "st" "b" "ing" "čp" "hl.m" "sv" "d" "hl" "apod"
+   "org" "j.h" "e" "ch" "tř" "f" "phdr" "čs" "m3" "a.s" "čkd" "g" "kr"
+   "i.m" "jr" "tzn" "lok" "př" "bl" "j" "al" "xvi" "kv" "j.o" "l"
+   "r.s.c" "pok" "o.k" "ceo" "m" "u.s.a" "č" "iv" "n" "st.celsia" "dr"
+   "přek" "plk" "sb" "líp" "šp" "vic" "množ" "p" "t.j" "mil" "roč"
+   "tzv" "gen" "resp" "str" "r" "min" "žitě" "kupř" "csc" "ard" "uh"
+   "vi" "viii" "t" "etc" "r.i.v" "s.p" "p.s" "vii" "mudr" "okr" "mir"
+   "arg" "vl" "t.zv" "w" "ul" "q.p.r" "doc" "t.r" "s.r.o" "tl" "y"
+   "pen" "judr" "prof" "ú" "u.s" "man" "a.g" "ict" "rak" "jug" "fuk"
+   "vr" "zv" "atď" "např" "ravenně" "mj" "tis" "mar" "tr" "drsc" "nar"
+   "ml" "zdi" "pplk"},
  :collocations
- [["a" "dvořáka"]
-  ["k" "maleevová"]
-  ["##number##" "ženy"]
-  ["c" "carrićre"]
-  ["##number##" "pád"]
-  ["x" "šalda"]
-  ["##number##" "ledna"]
-  ["##number##" "týdne"]
-  ["##number##" "symfonie"]
-  ["v" "havla"]
-  ["##number##" "ročník"]
-  ["##number##" "štrasburk"]
-  ["v" "marhoul"]
-  ["##number##" "září"]
-  ["##number##" "sudetoněmeckých"]
-  ["##number##" "min."]
-  ["z" "košler"]
-  ["i" "čnfl"]
-  ["s" "bacha"]
-  ["k" "design"]
-  ["##number##" "juniorské"]
-  ["c" "abrahama"]
-  ["##number##" "století"]
-  ["##number##" "ročníku"]
-  ["##number##" "světový"]
-  ["a" "jiráska"]
-  ["v" "mečiar"]
-  ["##number##" "července"]
-  ["k" "bielecki"]
-  ["i" "ligy"]
-  ["##number##" "máje"]
-  ["i" "čnhl"]
-  ["##number##" "oprávněnou"]
-  ["##number##" "kole"]
-  ["##number##" "výročí"]
-  ["h" "g."]
-  ["a" "dvorský"]
-  ["##number##" "února"]
-  ["##number##" "výroční"]
-  ["a" "mozart"]
-  ["i" "sponzor"]
-  ["##number##" "listopadu"]
-  ["a" "bradáč"]
-  ["##number##" "května"]
-  ["##number##" "tř."]
-  ["##number##" "místo"]
-  ["v" "klausem"]
-  ["##number##" "letech"]
-  ["a" "dubčeka"]
-  ["##number##" "aktu"]
-  ["##number##" "kolo"]
-  ["##number##" "mája"]
-  ["##number##" "dubna"]
-  ["##number##" "prosince"]
-  ["a" "tichý"]
-  ["v" "klaus"]
-  ["##number##" "létech"]
-  ["##number##" "květnu"]
-  ["v" "havel"]
-  ["##number##" "kola"]
-  ["i" "snfl"]
-  ["a" "mozarta"]
-  ["a" "bělého"]
-  ["v" "dlouhý"]
-  ["a" "dvorskému"]
-  ["a" "vivaldiho"]
-  ["k" "gott"]
-  ["##number##" "října"]
-  ["##number##" "šimková"]
-  ["o" "sokolov"]
-  ["##number##" "wladyslawowo"]
-  ["k" "peteraje"]
-  ["##number##" "června"]
-  ["i" "dejmala"]
-  ["i" "liga"]
-  ["k" "škrach"]
-  ["i" "rynda"]
-  ["##number##" "etapu"]
-  ["##number##" "ad"]
-  ["h" "měsíc"]
-  ["v" "mečiara"]
-  ["##number##" "listopadem"]
-  ["##number##" "srpna"]
-  ["z" "svěrák"]
-  ["##number##" "sjezd"]
-  ["##number##" "narozenin"]
-  ["##number##" "červenec"]
-  ["##number##" "pádě"]
-  ["##number##" "místě"]
-  ["v" "benda"]
-  ["h" "steina"]
-  ["##number##" "minutě"]
-  ["a" "dvořák"]
-  ["o" "vlček"]
-  ["a" "dubček"]
-  ["##number##" "květnem"]]}
+ #{["##number##" "výroční"] ["h" "g."] ["##number##" "pádě"]
+   ["k" "bielecki"] ["##number##" "juniorské"] ["##number##" "tř."]
+   ["##number##" "října"] ["##number##" "minutě"] ["a" "dubček"]
+   ["##number##" "listopadem"] ["##number##" "února"]
+   ["##number##" "květnu"] ["##number##" "mája"] ["a" "tichý"]
+   ["z" "košler"] ["##number##" "aktu"] ["a" "dvorskému"]
+   ["o" "sokolov"] ["##number##" "prosince"] ["k" "peteraje"]
+   ["a" "dvořák"] ["##number##" "místo"] ["##number##" "máje"]
+   ["v" "marhoul"] ["##number##" "letech"] ["##number##" "června"]
+   ["v" "mečiara"] ["i" "ligy"] ["v" "klaus"] ["##number##" "týdne"]
+   ["##number##" "květnem"] ["##number##" "ženy"] ["i" "dejmala"]
+   ["z" "svěrák"] ["##number##" "listopadu"] ["##number##" "létech"]
+   ["s" "bacha"] ["##number##" "pád"] ["a" "mozart"]
+   ["##number##" "šimková"] ["c" "carrićre"] ["v" "dlouhý"]
+   ["##number##" "května"] ["o" "vlček"] ["v" "havel"]
+   ["##number##" "etapu"] ["##number##" "wladyslawowo"] ["i" "liga"]
+   ["##number##" "sudetoněmeckých"] ["##number##" "narozenin"]
+   ["v" "mečiar"] ["a" "dvorský"] ["##number##" "sjezd"]
+   ["v" "klausem"] ["##number##" "kola"] ["##number##" "ročníku"]
+   ["h" "steina"] ["k" "maleevová"] ["x" "šalda"]
+   ["##number##" "světový"] ["##number##" "symfonie"]
+   ["##number##" "místě"] ["v" "benda"] ["##number##" "září"]
+   ["h" "měsíc"] ["##number##" "ročník"] ["k" "škrach"] ["k" "design"]
+   ["##number##" "min."] ["##number##" "štrasburk"]
+   ["##number##" "kole"] ["##number##" "ledna"] ["a" "mozarta"]
+   ["##number##" "století"] ["i" "snfl"] ["i" "sponzor"]
+   ["##number##" "oprávněnou"] ["a" "vivaldiho"] ["a" "dvořáka"]
+   ["##number##" "červenec"] ["a" "jiráska"] ["c" "abrahama"]
+   ["##number##" "ad"] ["i" "rynda"] ["##number##" "dubna"]
+   ["##number##" "srpna"] ["##number##" "výročí"] ["i" "čnhl"]
+   ["v" "havla"] ["a" "bělého"] ["k" "gott"] ["##number##" "kolo"]
+   ["##number##" "července"] ["a" "dubčeka"] ["i" "čnfl"]
+   ["a" "bradáč"]}}
