@@ -11,6 +11,7 @@
   (is (= "hell" (substr "hello" 0  4)))
   (is (= "lo"   (substr "hello" -2)))
   (is (= "ell"  (substr "hello" 1  -1)))
+  (is (= "hell" (substr "hello" 0 -1)))
   
   (is (= "have a nice day" (join-words ["have" "a" "nice" "day"]))))
 

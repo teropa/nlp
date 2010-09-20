@@ -20,3 +20,15 @@
     
 (defn join-words [words]
   (string/join " " words))
+
+(defn lower [^String s]
+  (.toLowerCase s))
+
+(defn upper [^String s]
+  (.toUpperCase s))
+
+(defn pairs [coll]
+  (partition-all 2 1 coll))
+
+(defn nonzero? [n]
+  (not (zero? n)))
