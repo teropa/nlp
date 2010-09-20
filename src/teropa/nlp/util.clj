@@ -1,7 +1,8 @@
 (ns teropa.nlp.util
   (:require [clojure.contrib.string :as string])
   (:require [clojure.contrib.duck-streams :as stream])
-  (:import [java.util Arrays]))
+  (:import [java.util Arrays])
+  (:import [java.util.regex Pattern]))
 
 (defn blank-string [length]
   (let [arr (char-array length)]
@@ -36,3 +37,24 @@
 
 (defn slurp-form* [f]
   (read (stream/slurp* f)))
+
+(defn re-sub [pattern replacement-fn s]
+  (let [matcher (.matcher pattern s)
+        result (StringBuffer.)]
+    (while (.find matcher)
+      (let [replacement (replacement-fn (.group matcher))
+            escaped-replacement (.replaceAll replacement "\\\\" "\\\\\\\\")]
+          (.appendReplacement matcher result escaped-replacement)))
+    (.appendTail matcher result)
+    (.toString result)))
+
+(defn convert-regexp-to-nongrouping [p]
+  (let [p (if (instance? Pattern p) (.pattern p) p)]
+    (if (re-matches #"\\[0-9]" p)
+      (throw (UnsupportedOperationException. "Regular expressions with back-references are not supported")))
+    (re-sub
+      #"\\.|\(\?|\("
+      #(.. #"^\($" (matcher %) (replaceAll "(?:"))
+      p)))
+
+      

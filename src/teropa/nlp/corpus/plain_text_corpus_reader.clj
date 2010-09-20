@@ -4,7 +4,6 @@
 (defrecord PlainTextCorpusReader [root fileids word-tokenizer sent-tokenizer para-block-reader encoding])
 (extend PlainTextCorpusReader api/CorpusReader api/default-impls)
 
-
 (defn make
   ([root fileids]
     (make root fileids (teropa.nlp.tokenizer.punkt/make-word-tokenizer)))

@@ -15,5 +15,27 @@
   
   (is (= "have a nice day" (join-words ["have" "a" "nice" "day"]))))
 
-(run-tests)
+
+(deftest pattern-nongrouping-conversion
+  
+  (is (= "a" (convert-regexp-to-nongrouping "a")))
+  (is (= "a.b[0-9]" (convert-regexp-to-nongrouping "a.b[0-9]")))
+  (is (= "(?:a)" (convert-regexp-to-nongrouping "(a)")))
+  (is (= "(?:a)" (convert-regexp-to-nongrouping "(?:a)")))
+  (is (= "\\(" (convert-regexp-to-nongrouping "\\(")))
+  (is (= "(?:\\()" (convert-regexp-to-nongrouping "(\\()")))
+  (is (= "\\((?:.*)\\)" (convert-regexp-to-nongrouping "\\((.*)\\)")))
+  (is (= "\\s*\\n\\s*\\n\\s*" (convert-regexp-to-nongrouping #"\s*\n\s*\n\s*")))
+  (is (= "\\w+|[^\\w\\s]+" (convert-regexp-to-nongrouping #"\w+|[^\w\s]+"))))
+
+
+
+
+
+
+
+
+
+  
+  (run-tests)
 
