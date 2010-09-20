@@ -1,5 +1,6 @@
 (ns teropa.nlp.util
   (:require [clojure.contrib.string :as string])
+  (:require [clojure.contrib.duck-streams :as stream])
   (:import [java.util Arrays]))
 
 (defn blank-string [length]
@@ -32,3 +33,6 @@
 
 (defn nonzero? [n]
   (not (zero? n)))
+
+(defn slurp-form* [f]
+  (read (stream/slurp* f)))

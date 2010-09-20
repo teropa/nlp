@@ -250,7 +250,17 @@
   (tokenize [this text args]
     (word-tokenize lang-vars text)))
 
+(defn make-word-tokenizer
+  ([] (make-word-tokenizer default-lang-vars))
+  ([lang-vars] (PunktWordTokenizer. lang-vars)))
+
 (deftokenizer PunktSentenceTokenizer [params lang-vars]
   (tokenize [this text] (tokenize this text {}))
   (tokenize [this text {:keys [realign-boundaries]}]
     (sentences-from-text this text realign-boundaries)))
+
+(defn make-sentence-tokenizer
+  ([] (make-sentence-tokenizer (slurp-form* "resources/tokenizers/punkt/english.clj")))
+  ([params] (make-sentence-tokenizer params default-lang-vars))
+  ([params lang-vars] (PunktSentenceTokenizer. params lang-vars)))
+  
