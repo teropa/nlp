@@ -61,11 +61,11 @@
       p)))
 
 (defn filenames-by-regex [root-file regex]
-  (let [pattern (if (instance? Pattern regex) regex (Pattern/compile regex))]
+  (let [pattern (if (instance? Pattern regex) regex (Pattern/compile regex))
+        root-path-length (inc (.length (.getAbsolutePath root-file)))]
     (apply sorted-set
       (map
-        (fn [f]
-          (.substring (.getAbsolutePath f) (inc (.length (.getAbsolutePath root-file)))))
+        #(.substring (.getAbsolutePath %) root-path-length)
         (FileUtils/listFiles
           root-file
           (RegexFileFilter. pattern)

@@ -5,45 +5,38 @@
   (:use teropa.nlp.util))
   
 
-(defrecord PlainTextCorpusReader [root fileids word-tokenizer sent-tokenizer para-block-tokenizer encoding])
-(extend PlainTextCorpusReader CorpusReader
-  (merge default-impls
-    {:raw
-       (fn
-         ([this] (raw this (:fileids this)))
-         ([this fileids]
-            (slurp-all (abspaths this fileids))))
-     :words
-       (fn
-         ([this] (words this (:fileids this)))
-         ([this fileids]
-           (mapcat
-             #(tok/tokenize (:word-tokenizer this) (streams/slurp* %))
-             (abspaths this fileids))))
-     :sents
-       (fn 
-         ([this] (sents this (:fileids this)))
-         ([this fileids]
-           (mapcat
-             (fn [path]
-               (map
-                 #(tok/tokenize (:word-tokenizer this) %)
-                 (tok/tokenize (:sent-tokenizer this) (streams/slurp* path))))
-             (abspaths this fileids))))
-     :paras
-       (fn
-         ([this] (paras this (:fileids this)))
-         ([this fileids]
-           (mapcat
-             (fn [path]
-               (map
-                 (fn [para]
-                   (map
-                     #(tok/tokenize (:word-tokenizer this) %)
-                     (tok/tokenize (:sent-tokenizer this) para)))
-                 (tok/tokenize (:para-block-tokenizer this) (streams/slurp* path))))
-             (abspaths this fileids))))}))
-         
+(defrecord PlainTextCorpusReader [root fileids word-tokenizer sent-tokenizer para-tokenizer encoding]
+  CorpusContents
+  (raw [this] (raw this fileids))
+  (raw [this fileids]
+    (slurp-all (abspaths this fileids)))
+  (words [this] (words this fileids))
+  (words [this fileids]
+    (mapcat
+      #(tok/tokenize word-tokenizer (streams/slurp* %))
+      (abspaths this fileids)))
+  (sents [this] (sents this fileids))
+  (sents [this fileids]
+    (mapcat
+      (fn [path]
+        (map
+          #(tok/tokenize word-tokenizer %)
+          (tok/tokenize sent-tokenizer (streams/slurp* path))))
+      (abspaths this fileids)))
+  (paras [this] (paras this fileids))
+  (paras [this fileids]
+    (mapcat
+      (fn [path]
+        (map
+          (fn [para]
+            (map
+              #(tok/tokenize word-tokenizer %)
+              (tok/tokenize sent-tokenizer para)))
+          (tok/tokenize para-tokenizer (streams/slurp* path))))
+      (abspaths this fileids))))
+  
+(extend PlainTextCorpusReader CorpusReader default-reader-impls)
+
 (defn make
   ([root fileids]
     (make root fileids (teropa.nlp.tokenizer.regexp/make-word-punct-tokenizer)))
@@ -51,15 +44,15 @@
     (make root fileids word-tokenizer (teropa.nlp.tokenizer.punkt/make-sentence-tokenizer)))
   ([root fileids word-tokenizer sent-tokenizer]
     (make root fileids word-tokenizer sent-tokenizer (teropa.nlp.tokenizer.regexp/make-blank-line-tokenizer)))
-  ([root fileids word-tokenizer sent-tokenizer para-block-reader]
-    (make root fileids word-tokenizer sent-tokenizer para-block-reader nil))
-  ([root fileids word-tokenizer sent-tokenizer para-block-reader encoding]
+  ([root fileids word-tokenizer sent-tokenizer para-tokenizer]
+    (make root fileids word-tokenizer sent-tokenizer para-tokenizer nil))
+  ([root fileids word-tokenizer sent-tokenizer para-tokenizer encoding]
     (let [root (normalize-root root)]
       (PlainTextCorpusReader.
         root
         (filenames-by-regex root fileids)
         word-tokenizer
         sent-tokenizer
-        para-block-reader
+        para-tokenizer
         encoding))))
 

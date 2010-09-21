@@ -16,7 +16,9 @@
   (open [this file]
     "Returns an open reader that can be used to read the given file.")
   (encoding [this file]
-    "Return the unicode encoding of the given corpus file, if known")
+    "Return the unicode encoding of the given corpus file, if known"))
+
+(defprotocol CorpusContents
   (raw [this] [this fileids]
     "Return the given files as a single string")
   (words [this] [this fileids]
@@ -29,7 +31,7 @@
      of sentences, which are in turn encoded as seqs of word strings"))
 
 
-(def default-impls
+(def default-reader-impls
   {:encoding
      (fn [this file]
        (if (associative? (:encoding this))
