@@ -11,6 +11,3 @@
 (def text3 (words genesis ["english-kjv.txt"]))
 (def text4 (words inaugural))
 (def text5 (words gutenberg ["chesterton-thursday.txt"]))
-
-  
-

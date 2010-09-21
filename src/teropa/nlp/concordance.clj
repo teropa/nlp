@@ -11,16 +11,16 @@
 (defprotocol Concordance
   (concordance [this word] [this word width] [this word width lines])
   (print-concordance [this word] [this word width] [this word width lines])
-  (offsets [this word]))
+  (concordance-offsets [this word]))
 
 (defrecord ConcordanceIndex [tokens the-index key-fn]
   Concordance
-  (offsets [this word]
+  (concordance-offsets [this word]
     (the-index (key-fn word)))
   (concordance [this word] (concordance this word 75))
   (concordance [this word width] (concordance this word width 25))
   (concordance [this word width line-count]
-    (when-let [offsts (offsets this word)]
+    (when-let [offsets (concordance-offsets this word)]
       (let [half-width (/ (- width (.length word)) 2)
             context (/ width 4)] ; approx number of words of context
         (map
@@ -34,7 +34,7 @@
                 word
                 " "
                 (substr rhs 0 half-width))))
-          (take line-count offsts)))))
+          (take line-count offsets)))))
   (print-concordance [this word]
     (print-conc (concordance this word)))
   (print-concordance [this word width]
@@ -43,8 +43,8 @@
     (print-conc (concordance this word width line-count))))
   
   
-(defn make-index
-  ([words] (make-index words identity))
+(defn make-concordance-index
+  ([words] (make-concordance-index words identity))
   ([words key-fn]
     (let [word-vec (into [] words)]
       (ConcordanceIndex.
