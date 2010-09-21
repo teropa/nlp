@@ -1,19 +1,32 @@
 (ns teropa.nlp.corpus.corpus-reader
   (:require [clojure.string :as string])
   (:require [clojure.contrib.duck-streams :as streams])
+  (:import [java.io File])
   (:import [org.apache.commons.io FilenameUtils]))
 
 (defprotocol CorpusReader
-  (readme [this] "Returns the contents of the corpus README file, if it exists.")
-  (abspath [this fileid] "Return the absolute path for the given file")
-  (abspaths
-    [this]
-    [this fileids]
-    [this fileids include-encoding]
+  (readme [this]
+    "Returns the contents of the corpus README file, if it exists.")
+  (abspath [this fileid]
+    "Return the absolute path for the given file")
+  (abspaths [this] [this fileids] [this fileids include-encoding]
     "Returns a seq of the absolute paths for all fileids in this corpus,
-     or the list of given fileids. if include-encoding is true, returns a list of [path encoding] vectors")
-  (open [this file] "Returns an open reader that can be used to read the given file.")
-  (encoding [this file] "Return the unicode encoding of the given corpus file, if known"))
+     or the list of given fileids. if include-encoding is true, returns
+     a list of [path encoding] vectors")
+  (open [this file]
+    "Returns an open reader that can be used to read the given file.")
+  (encoding [this file]
+    "Return the unicode encoding of the given corpus file, if known")
+  (raw [this] [this fileids]
+    "Return the given files as a single string")
+  (words [this] [this fileids]
+    "Return the given files as a seq of words")
+  (sents [this] [this fileids]
+    "Return the given files as a seq of sentences or utterances,
+     each encoded as a seq of word strings")
+  (paras [this] [this fileids]
+    "Return the given files as a seq of paragraphs, each encoded as a seq
+     of sentences, which are in turn encoded as seqs of word strings"))
 
 
 (def default-impls
@@ -29,7 +42,7 @@
            (streams/reader (FilenameUtils/concat (:root this) file)))))
    :abspath
      (fn [this file]
-       (FilenameUtils/concat (:root this) file))
+       (FilenameUtils/concat (.getAbsolutePath (:root this)) file))
    :abspaths
      (fn
        ([this] (abspaths this (:fileids this)))
@@ -51,3 +64,8 @@
          :else
            (recur (str s line)))))
     ""))
+
+(defn normalize-root [root]
+  (if (string? root)
+    (File. root)
+    root))

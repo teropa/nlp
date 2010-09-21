@@ -1,8 +1,11 @@
 (ns teropa.nlp.util
   (:require [clojure.contrib.string :as string])
   (:require [clojure.contrib.duck-streams :as stream])
+  (:import [java.io File])
   (:import [java.util Arrays])
-  (:import [java.util.regex Pattern]))
+  (:import [java.util.regex Pattern])
+  (:import [org.apache.commons.io FileUtils])
+  (:import [org.apache.commons.io.filefilter RegexFileFilter TrueFileFilter]))
 
 (defn blank-string [length]
   (let [arr (char-array length)]
@@ -36,7 +39,7 @@
   (not (zero? n)))
 
 (defn slurp-form* [f]
-  (read (stream/slurp* f)))
+  (read-string (stream/slurp* f)))
 
 (defn re-sub [pattern replacement-fn s]
   (let [matcher (.matcher pattern s)
@@ -57,4 +60,17 @@
       #(.. #"^\($" (matcher %) (replaceAll "(?:"))
       p)))
 
-      
+(defn filenames-by-regex [root-file regex]
+  (let [pattern (if (instance? Pattern regex) regex (Pattern/compile regex))]
+    (apply sorted-set
+      (map
+        (fn [f]
+          (.substring (.getAbsolutePath f) (inc (.length (.getAbsolutePath root-file)))))
+        (FileUtils/listFiles
+          root-file
+          (RegexFileFilter. pattern)
+          TrueFileFilter/INSTANCE)))))
+
+(defn slurp-all [files]
+  (reduce str (map stream/slurp* files)))
+

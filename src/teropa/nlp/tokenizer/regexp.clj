@@ -22,6 +22,12 @@
   (tokenize [this text]
     (tokenize-with-regex text #"\s*\n\s*\n\s*" true)))
 
+(defn make-blank-line-tokenizer []
+  (BlanklineTokenizer.))
+
 (deftokenizer WordPunctTokenizer []
   (tokenize [this text]
     (tokenize-with-regex text #"\w+|[^\w\s]+")))
+
+(defn make-word-punct-tokenizer []
+  (WordPunctTokenizer.))
