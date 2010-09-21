@@ -1,6 +1,8 @@
 (ns teropa.nlp.corpus.plain-text-corpus-reader
   (:require [clojure.contrib.duck-streams :as streams])
   (:require [teropa.nlp.tokenizer :as tok])
+  (:require [teropa.nlp.tokenizer.punkt])
+  (:require [teropa.nlp.tokenizer.regexp])
   (:use teropa.nlp.corpus.corpus-reader)
   (:use teropa.nlp.util))
   

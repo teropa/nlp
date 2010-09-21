@@ -74,3 +74,5 @@
 (defn slurp-all [files]
   (reduce str (map stream/slurp* files)))
 
+(defn indexed [coll]
+  (map list (iterate inc 0) coll))
