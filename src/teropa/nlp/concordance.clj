@@ -44,7 +44,7 @@
   
   
 (defn make-concordance-index
-  ([words] (make-concordance-index words identity))
+  ([words] (make-concordance-index words lower))
   ([words key-fn]
     (let [word-vec (into [] words)]
       (ConcordanceIndex.
