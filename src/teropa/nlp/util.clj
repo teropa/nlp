@@ -76,3 +76,6 @@
 
 (defn indexed [coll]
   (map list (iterate inc 0) coll))
+
+(defn as-set [coll]
+  (apply hash-set coll))
