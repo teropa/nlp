@@ -79,3 +79,11 @@
 
 (defn as-set [coll]
   (apply hash-set coll))
+
+(defn as-vec [coll]
+  (if (vector? coll)
+      coll
+      (vec coll)))
+
+(defn rsort-by [coll cmp]
+  (reverse (sort-by coll cmp)))

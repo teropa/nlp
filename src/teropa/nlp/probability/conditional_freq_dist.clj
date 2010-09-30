@@ -36,6 +36,7 @@
 
 (defprotocol ConditionalFreqDistAccess
   (dist [this condition])
+  (freq [this condition sample])
   (conditions [this])
   (n [this]))
 
@@ -50,6 +51,8 @@
   ConditionalFreqDistAccess
   (dist [this condition]
     (get this condition (fdist/make-freq-dist)))
+  (freq [this condition sample]
+    (fdist/freq (dist this condition) sample))
   (conditions [this]
     (sort (keys this)))
   (n [this]
