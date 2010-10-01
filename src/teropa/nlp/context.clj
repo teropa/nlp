@@ -1,4 +1,6 @@
 (ns teropa.nlp.context
+  (:require [clojure.set :as set])
+  (:require [clojure.string :as s])
   (:use teropa.nlp.util)
   (:require [teropa.nlp.probability.conditional-freq-dist :as cfd])
   (:require [teropa.nlp.probability.freq-dist :as fd])
@@ -16,7 +18,11 @@
   (word-similarity-map [this word]
     "Return a similarity mapping from words to 'similarity scores,'
      indicating how often these two words occur in the same context")
-  (similar-words [this word] [this word n]))
+  (similar-words [this word] [this word n])
+  (common-contexts [this words] [this words fail-on-unknown]
+    "Find contexts where the specified words can all appear; and
+     return a frequency distribution mapping each context to the
+     number of times that context was used"))
 
 (defrecord ContextIndex [word-to-contexts context-to-words key-fn]
   Context
@@ -43,7 +49,31 @@
                        word
                        (+ (get res word 0) scr)))
               {}
-              scores)))))))
+              scores))))))
+  (common-contexts [this words]
+    (common-contexts this words false))
+  (common-contexts [this words fail-on-unknown]
+    (let [words (map key-fn words)
+          contexts (map #(as-set (fd/samples (cfd/dist word-to-contexts %))) words)
+          common (reduce set/intersection contexts)
+          empties (some empty? contexts)]
+      (if (and fail-on-unknown
+               (some empty? contexts))
+        (throw (IllegalArgumentException. (str "The following word(s) were not found: " (s/join " " words))))
+        (if (empty? common)
+            (fd/make-freq-dist)
+            (reduce 
+              (fn [res w]
+                (reduce
+                  (fn [res c]
+                    (if (common c)
+                        (fd/incr res c)
+                        res))
+                  res
+                  (fd/samples (cfd/dist word-to-contexts w))))
+              (fd/make-freq-dist)
+              words))))))
+                  
 
 (defn make-context-index
   ([tokens]
