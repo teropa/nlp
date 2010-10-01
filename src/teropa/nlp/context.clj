@@ -1,18 +1,9 @@
 (ns teropa.nlp.context
   (:require [clojure.set :as set])
-  (:require [clojure.string :as s])
   (:use teropa.nlp.util)
   (:require [teropa.nlp.probability.conditional-freq-dist :as cfd])
   (:require [teropa.nlp.probability.freq-dist :as fd])
   (:require [teropa.nlp.metrics.score :as score]))
-
-(defn- default-context-fn [tokens i]
-  [(if (zero? i) 
-     "*START*"
-     (lower (nth tokens (dec i))))
-   (if (= i (dec (count tokens)))
-     "*END*"
-     (lower (nth tokens (inc i))))])
 
 (defprotocol Context
   (word-similarity-map [this word]
@@ -36,57 +27,52 @@
   (similar-words [this word]
     (similar-words this word 20))
   (similar-words [this word n]
-    (let [scores (for [c (fd/samples (cfd/dist word-to-contexts (key-fn word)))
-                       w (fd/samples (cfd/dist context-to-words c)) :when (not= w word)]
-                   [w (* (cfd/freq context-to-words c word)
-                         (cfd/freq context-to-words c w))])]
-      (map first
-        (take n
-          (rsort-by second
-            (reduce
-              (fn [res [word scr]]
-                (assoc res
-                       word
-                       (+ (get res word 0) scr)))
-              {}
-              scores))))))
+    (let [scores (for [c (cfd/samples word-to-contexts (key-fn word))
+                       w (cfd/samples context-to-words c) :when (not= w word)]
+                   {:word w 
+                    :score (* (cfd/freq context-to-words c word)
+                              (cfd/freq context-to-words c w))})
+          totals-by-word (map 
+                           (fn [[word entries]]
+                             [word (reduce + (map :score entries))])
+                           (group-by :word scores))]
+      (->> totals-by-word
+           (sort-by second)
+           reverse
+           (take n)
+           (map first))))
   (common-contexts [this words]
     (common-contexts this words false))
   (common-contexts [this words fail-on-unknown]
     (let [words (map key-fn words)
-          contexts (map #(as-set (fd/samples (cfd/dist word-to-contexts %))) words)
-          common (reduce set/intersection contexts)
-          empties (some empty? contexts)]
-      (if (and fail-on-unknown
-               (some empty? contexts))
-        (throw (IllegalArgumentException. (str "The following word(s) were not found: " (s/join " " words))))
-        (if (empty? common)
-            (fd/make-freq-dist)
-            (reduce 
-              (fn [res w]
-                (reduce
-                  (fn [res c]
-                    (if (common c)
-                        (fd/incr res c)
-                        res))
-                  res
-                  (fd/samples (cfd/dist word-to-contexts w))))
-              (fd/make-freq-dist)
-              words))))))
-                  
+          contexts (map #(as-set (cfd/samples word-to-contexts %)) words)
+          common (reduce set/intersection contexts)]
+      (if (and fail-on-unknown (some empty? contexts))
+        (throw (IllegalArgumentException. (str "The following word(s) were not found: " words)))
+        (reduce fd/incr
+                (fd/make-freq-dist)
+                (filter common (apply concat contexts)))))))
+
+(defn- default-context-fn [tokens i]
+  [(if (zero? i) 
+     "*START*"
+     (lower (nth tokens (dec i))))
+   (if (= i (dec (count tokens)))
+     "*END*"
+     (lower (nth tokens (inc i))))])
 
 (defn make-context-index
   ([tokens]
     (make-context-index tokens default-context-fn))
   ([tokens context-fn]
-    (make-context-index tokens context-fn identity))
+    (make-context-index tokens context-fn lower))
   ([tokens context-fn key-fn]
     (let [tokens (as-vec tokens)
           tokens-with-contexts
-          (map
-            (fn [[idx token]]
-              [token (context-fn tokens idx)])
-            (indexed tokens))
+            (map
+              (fn [[idx token]]
+                [token (context-fn tokens idx)])
+              (indexed tokens))
           [word-to-contexts context-to-words]
             (reduce
               (fn [[wtc ctw] [token context]]
@@ -99,4 +85,4 @@
       (ContextIndex.
         word-to-contexts
         context-to-words
-        lower))))
+        key-fn))))

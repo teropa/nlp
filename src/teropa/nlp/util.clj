@@ -84,6 +84,3 @@
   (if (vector? coll)
       coll
       (vec coll)))
-
-(defn rsort-by [coll cmp]
-  (reverse (sort-by coll cmp)))
