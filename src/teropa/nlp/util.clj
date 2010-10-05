@@ -35,6 +35,9 @@
 (defn pairs [coll]
   (partition-all 2 1 coll))
 
+(defn mapreduce [map-fn reduce-fn & colls]
+  (reduce reduce-fn (apply map map-fn colls)))
+
 (defn nonzero? [n]
   (not (zero? n)))
 
@@ -78,9 +81,41 @@
   (map list (iterate inc 0) coll))
 
 (defn as-set [coll]
-  (apply hash-set coll))
+  (into #{} coll))
 
 (defn as-vec [coll]
   (if (vector? coll)
       coll
       (vec coll)))
+
+(defn ingrams
+  "A utility that produces a seq over ngrams generated from a sequence of items"
+  ([sq n] (ingrams sq n false))
+  ([sq n pad-left] (ingrams sq n pad-left false))
+  ([sq n pad-left pad-right] (ingrams sq n pad-left pad-right nil))
+  ([sq n pad-left pad-right pad-with]
+    (let [l (if pad-left (repeat (dec n) pad-with))
+          r (if pad-right (repeat (dec n) pad-with))]
+      (map vec (partition n 1 (concat l sq r))))))
+
+(defn log2 [n]
+  (/ (Math/log n)
+     (Math/log 2)))
+
+(defn round [n precision]
+  (-> (double n)
+      BigDecimal/valueOf
+      (.setScale precision BigDecimal/ROUND_HALF_UP)
+      (.toString)
+      Double/valueOf))
+
+(defn throw-illegal-arg [& msg]
+  (throw
+    (IllegalArgumentException.
+      (apply str (interleave msg (repeat " "))))))
+
+(defn as-coll [a]
+  (if (coll? a)
+      a
+      [a]))
+      

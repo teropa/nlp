@@ -32,6 +32,7 @@
                (incr cfdist condition word)))
           (make-conditional-freq-dist)
           sentence)"
+  (:use [teropa.nlp.util])
   (:require [teropa.nlp.probability.freq-dist :as fdist]))
 
 (defprotocol ConditionalFreqDistAccess
@@ -57,7 +58,7 @@
   (samples [this condition]
     (fdist/samples (dist this condition)))
   (conditions [this]
-    (sort (keys this)))
+    (sort-by #(apply str (as-coll %)) (keys this)))
   (n [this]
     (reduce + (map fdist/n (vals this))))
   

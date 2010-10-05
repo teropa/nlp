@@ -34,7 +34,7 @@
                               (cfd/freq context-to-words c w))})
           totals-by-word (map 
                            (fn [[word entries]]
-                             [word (reduce + (map :score entries))])
+                             [word (mapreduce :score + entries)])
                            (group-by :word scores))]
       (->> totals-by-word
            (sort-by second)
