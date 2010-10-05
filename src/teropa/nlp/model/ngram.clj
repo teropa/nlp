@@ -7,18 +7,18 @@
   (:require [teropa.nlp.probability.lidstone-prob-dist :as lpd]))
 
 (defn- beta [ngram tokens]
-  (if (some #(= tokens %) (cpd/conditions (:model ngram)))
+  (if (some= tokens (cpd/conditions (:model ngram)))
       (pd/discount (cpd/dist (:model ngram) tokens))
       1))
 
-(defn- generate-one [ngram context]
-  (let [context (concat (:prefix ngram) context)
-        context (vec (drop (- (count context) (dec (:n ngram))) context))]
+(defn- generate-one [{:keys [prefix n model backoff]} context]
+  (let [context (vec (take-last (dec n)
+                                (concat prefix context)))]
     (cond
-      (cpd/contains (:model ngram) context)
-        (pd/generate (cpd/dist (:model ngram) context))
-      (> (:n ngram) 1)
-        (generate-one (:backoff ngram) (rest context))
+      (cpd/contains model context)
+        (pd/generate (cpd/dist model context))
+      (> n 1)
+        (generate-one backoff (rest context))
       :else
         ".")))
   

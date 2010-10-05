@@ -119,3 +119,5 @@
       a
       [a]))
       
+(defn some= [tst coll]
+  (some #(= tst %) coll))
