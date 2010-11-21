@@ -121,3 +121,11 @@
       
 (defn some= [tst coll]
   (some #(= tst %) coll))
+
+(defn cp-resource
+  "Returns a URL for a classpath resource"
+  [res]
+  (-> (Thread/currentThread)
+      (.getContextClassLoader)
+      (.getResource res)))
+      

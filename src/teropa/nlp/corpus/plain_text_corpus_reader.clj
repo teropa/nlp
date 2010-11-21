@@ -7,26 +7,26 @@
   (:use teropa.nlp.util))
   
 
-(defrecord PlainTextCorpusReader [root fileids word-tokenizer sent-tokenizer para-tokenizer encoding]
+(defrecord PlainTextCorpusReader [files word-tokenizer sent-tokenizer para-tokenizer encoding]
   CorpusContents
-  (raw [this] (raw this fileids))
-  (raw [this fileids]
-    (slurp-all (abspaths this fileids)))
-  (words [this] (words this fileids))
-  (words [this fileids]
+  (raw [this] (raw this files))
+  (raw [this files]
+    (slurp-all files))
+  (words [this] (words this files))
+  (words [this files]
     (mapcat
       #(tok/tokenize word-tokenizer (streams/slurp* %))
-      (abspaths this fileids)))
-  (sents [this] (sents this fileids))
-  (sents [this fileids]
+      files))
+  (sents [this] (sents this files))
+  (sents [this files]
     (mapcat
       (fn [path]
         (map
           #(tok/tokenize word-tokenizer %)
           (tok/tokenize sent-tokenizer (streams/slurp* path))))
-      (abspaths this fileids)))
-  (paras [this] (paras this fileids))
-  (paras [this fileids]
+      files))
+  (paras [this] (paras this files))
+  (paras [this files]
     (mapcat
       (fn [path]
         (map
@@ -35,26 +35,24 @@
               #(tok/tokenize word-tokenizer %)
               (tok/tokenize sent-tokenizer para)))
           (tok/tokenize para-tokenizer (streams/slurp* path))))
-      (abspaths this fileids))))
+      files)))
   
 (extend PlainTextCorpusReader CorpusReader default-reader-impls)
 
 (defn make
-  ([root fileids]
-    (make root fileids (teropa.nlp.tokenizer.regexp/make-word-punct-tokenizer)))
-  ([root fileids word-tokenizer]
-    (make root fileids word-tokenizer (teropa.nlp.tokenizer.punkt/make-sentence-tokenizer)))
-  ([root fileids word-tokenizer sent-tokenizer]
-    (make root fileids word-tokenizer sent-tokenizer (teropa.nlp.tokenizer.regexp/make-blank-line-tokenizer)))
-  ([root fileids word-tokenizer sent-tokenizer para-tokenizer]
-    (make root fileids word-tokenizer sent-tokenizer para-tokenizer nil))
-  ([root fileids word-tokenizer sent-tokenizer para-tokenizer encoding]
-    (let [root (normalize-root root)]
+  ([files]
+    (make files (teropa.nlp.tokenizer.regexp/make-word-punct-tokenizer)))
+  ([files word-tokenizer]
+    (make files word-tokenizer (teropa.nlp.tokenizer.punkt/make-sentence-tokenizer)))
+  ([files word-tokenizer sent-tokenizer]
+    (make files word-tokenizer sent-tokenizer (teropa.nlp.tokenizer.regexp/make-blank-line-tokenizer)))
+  ([files word-tokenizer sent-tokenizer para-tokenizer]
+    (make files word-tokenizer sent-tokenizer para-tokenizer nil))
+  ([files word-tokenizer sent-tokenizer para-tokenizer encoding]
       (PlainTextCorpusReader.
-        root
-        (filenames-by-regex root fileids)
+        files
         word-tokenizer
         sent-tokenizer
         para-tokenizer
-        encoding))))
+        encoding)))
 

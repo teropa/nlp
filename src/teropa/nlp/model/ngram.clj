@@ -61,9 +61,9 @@
    words of training text. An estimator smooths the probabilities derived
    from the text and may allow generation of ngrams not seen during
    training."
-  ([n train] 
-    (make-ngram-model n train (fn [fdist _] (lpd/make-lidstone-prob-dist fdist (/ 1 5)))))
-  ([n train estimator]
+  ([train n] 
+    (make-ngram-model train n (fn [fdist _] (lpd/make-lidstone-prob-dist fdist (/ 1 5)))))
+  ([train n estimator]
     (let [prefix (repeat (dec n) "")
           ngrams (ingrams (concat prefix train) n)
           cfdist (->> ngrams
@@ -73,7 +73,7 @@
                           (cfd/incr cfdist (vec context) token))
                         (cfd/make-conditional-freq-dist)))
           model (cpd/make-conditional-prob-dist cfdist estimator (cfd/n cfdist))
-          backoff (if (> n 1) (make-ngram-model (dec n) train estimator))]
+          backoff (if (> n 1) (make-ngram-model train (dec n) estimator))]
       (NgramModel. n (as-set ngrams) prefix model backoff))))
     
     

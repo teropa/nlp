@@ -2,7 +2,7 @@
   (:use clojure.test)
   (:use teropa.nlp.model.ngram))
 
-(let [ngram (make-ngram-model 2 ["easter" "bunny" "easter" "fox" "easter" "bunny"])]
+(let [ngram (make-ngram-model ["easter" "bunny" "easter" "fox" "easter" "bunny"] 2)]
   
   (deftest probabilities
     (is (= (/ 11 17) (prob ngram "bunny" ["easter"])))

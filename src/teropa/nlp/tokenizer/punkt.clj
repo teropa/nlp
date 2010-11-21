@@ -260,7 +260,7 @@
     (sentences-from-text this text realign-boundaries)))
 
 (defn make-sentence-tokenizer
-  ([] (make-sentence-tokenizer (slurp-form* "resources/tokenizers/punkt/english.clj")))
+  ([] (make-sentence-tokenizer (slurp-form* (cp-resource "tokenizers/punkt/english.clj"))))
   ([params] (make-sentence-tokenizer params default-lang-vars))
   ([params lang-vars] (PunktSentenceTokenizer. params lang-vars)))
   
